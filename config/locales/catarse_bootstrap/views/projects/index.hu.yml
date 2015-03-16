@@ -6,14 +6,14 @@ hu:
       title: Faça acontecer os projetos em que você acredita
     index:
       title: 'Aki másnak oktatás'
-      back_a_project: 'Támogass egy tanárt'
+      back_a_project: 'Támogass egy osztályt'
       banner_title: 'Aki másnak oktatás...'
       see_all: 'Összes'
       near_you: 'Közeledben'
-      recents: Recentes
-      blog: Blog do Catarse
-      expiring: Na reta final
-      recommended: Recomendados
+      recents: 'Nemrég feladott'
+      blog: 'Aki másnak oktatás blog'
+      expiring: 'Mindjárt lejár'
+      recommended: 'Ajánlott'
       banner_subtitle: 'Tanároknak szükségük van eszközökre a tanításhoz. Nézz körül, válassz egy projektet, segíts másnak tanulni.'
       box:
         by: por
