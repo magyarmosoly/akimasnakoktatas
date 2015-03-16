@@ -3,54 +3,30 @@
 puts 'Seeding the database...'
 
 [
-  { pt: 'Arte', en: 'Art' },
-  { pt: 'Artes plásticas', en: 'Visual Arts' },
-  { pt: 'Circo', en: 'Circus' },
-  { pt: 'Comunidade', en: 'Community' },
-  { pt: 'Humor', en: 'Humor' },
-  { pt: 'Quadrinhos', en: 'Comicbooks' },
-  { pt: 'Dança', en: 'Dance' },
-  { pt: 'Design', en: 'Design' },
-  { pt: 'Eventos', en: 'Events' },
-  { pt: 'Moda', en: 'Fashion' },
-  { pt: 'Gastronomia', en: 'Gastronomy' },
-  { pt: 'Cinema e Vídeo', en: 'Film & Video' },
-  { pt: 'Jogos', en: 'Games' },
-  { pt: 'Jornalismo', en: 'Journalism' },
-  { pt: 'Música', en: 'Music' },
-  { pt: 'Fotografia', en: 'Photography' },
-  { pt: 'Ciência e Tecnologia', en: 'Science & Technology' },
-  { pt: 'Teatro', en: 'Theatre' },
-  { pt: 'Esporte', en: 'Sport' },
-  { pt: 'Web', en: 'Web' },
-  { pt: 'Carnaval', en: 'Carnival' },
-  { pt: 'Arquitetura e Urbanismo', en: 'Architecture & Urbanism' },
-  { pt: 'Literatura', en: 'Literature' },
-  { pt: 'Mobilidade e Transporte', en: 'Mobility & Transportation' },
-  { pt: 'Meio Ambiente', en: 'Environment' },
-  { pt: 'Negócios Sociais', en: 'Social Business' },
-  { pt: 'Educação', en: 'Education' },
-  { pt: 'Filmes de Ficção', en: 'Fiction Films' },
-  { pt: 'Filmes Documentários', en: 'Documentary Films' },
-  { pt: 'Filmes Universitários', en: 'Experimental Films' }
+  { pt: 'Cat1', en: 'Art', hu: 'Művészet'},
+  { pt: 'Cat2', en: 'Science', hu: 'Tudomány'},
+  { pt: 'Cat3', en: 'Math', hu: 'Matek'},
+  { pt: 'Cat4', en: 'Field Trips', hu: 'Kirándulás'},
+  { pt: 'Cat5', en: 'Books', hu: 'Könyvek'},
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
    category.update_attributes({
-     name_en: name[:en]
+     name_en: name[:en],
+     name_hu: name[:hu]
    })
  end
 
 {
-  company_name: 'Catarse',
+  company_name: 'Aki másnak oktatás',
   company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
-  host: 'catarse.me',
-  base_url: "http://catarse.me",
+  host: 'akimasnakoktatas.hu',
+  base_url: "http://akimasnakoktatas.hu",
 
-  email_contact: 'contato@catarse.me',
-  email_payments: 'financeiro@catarse.me',
-  email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
-  email_no_reply: 'no-reply@catarse.me',
+  email_contact: 'hello@akimasnakoktatas.hu',
+  email_payments: 'fizetes@akimasnakoktatas.hu',
+  email_projects: 'projektek@akimasnakoktatas.hu',
+  email_system: 'rendszer@akimasnakoktatas.hu',
+  email_no_reply: 'no-reply@akimasnakoktatas.hu',
   facebook_url: "http://facebook.com/catarse.me",
   facebook_app_id: '173747042661491',
   twitter_url: 'http://twitter.com/catarse',

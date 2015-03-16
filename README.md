@@ -1,8 +1,6 @@
-Hello aki masnak oktatas!
+# Aki másnak oktatás
 
-# Catarse [![Build Status](https://img.shields.io/travis/catarse/catarse.svg)](https://travis-ci.org/catarse/catarse) [![Coverage Status](https://img.shields.io/coveralls/catarse/catarse/channels.svg)](https://coveralls.io/r/catarse/catarse) [![Dependency Status](https://img.shields.io/gemnasium/catarse/catarse.svg)](https://gemnasium.com/catarse/catarse) [![Code Climate](https://img.shields.io/codeclimate/github/catarse/catarse.svg)](https://codeclimate.com/github/catarse/catarse)
-
-The first crowdfunding platform from Brazil
+Crowdfunding schools based on catarse.
 
 ## An open source crowdfunding platform for creative projects
 
@@ -21,10 +19,13 @@ To run this project you need to have:
 * Ruby 2.1.2
 * [PostgreSQL](http://www.postgresql.org/)
   * OSX - [Postgress.app](http://postgresapp.com/)
+    * `export PATH="/Applications/Postgres.app/Contents/Versions/9.4/bin:$PATH"`
   * Linux - `$ sudo apt-get install postgresql`
   * Windows - [PostgreSQL for Windows](http://www.postgresql.org/download/windows/)
 
   **IMPORTANT**: Make sure you have postgresql-contrib ([Aditional Modules](http://www.postgresql.org/docs/9.3/static/contrib.html)) installed on your system.
+* Imagemagick
+* Redis
 
 ### Setup the project
 

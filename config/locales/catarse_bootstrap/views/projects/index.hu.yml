@@ -1,0 +1,51 @@
+hu:
+  projects:
+    index_header:
+      subtitle: Financie projetos de maneira colaborativa e torne-se parte de algo
+        maior. Promova uma catarse coletiva! Você é a peça que falta nesta história.
+      title: Faça acontecer os projetos em que você acredita
+    index:
+      title: 'Aki másnak oktatás'
+      back_a_project: 'Támogass egy tanárt'
+      banner_title: 'Aki másnak oktatás...'
+      see_all: 'Összes'
+      near_you: 'Közeledben'
+      recents: Recentes
+      blog: Blog do Catarse
+      expiring: Na reta final
+      recommended: Recomendados
+      banner_subtitle: 'Tanároknak szükségük van eszközökre a tanításhoz. Nézz körül, válassz egy projektet, segíts másnak tanulni.'
+      box:
+        by: por
+        when: em
+      banner: "Conheça a pesquisa"
+      explore: "Explore projetos"
+      links:
+        channels: "Descubra o Canal Asas"
+        recommended: "Descubra projetos recomendados"
+        expiring: "Descubra projetos na reta final"
+        recents: "Descubra projetos recentes"
+        near: "Descubra projetos perto de você"
+      sidebar:
+        titles:
+          blog: blog
+          facebook: "já curtiu nosso face?"
+          newsletter: "Assine nossa news"
+          faq: "tá com dúvida?"
+          schedule: agenda
+        placeholders:
+          email: "Digite seu email"
+        buttons:
+          newsletter: Enviar
+      sections:
+        near:
+          title: 'Próximos a mim'
+        recommended:
+          title: 'Recomendados'
+        expiring:
+          title: "Na reta final"
+        recents:
+          title: "Recentes"
+        channels:
+          title: 'Canal Asas'
+
