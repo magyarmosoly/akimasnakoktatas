@@ -1,5 +1,12 @@
 pt:
   projects:
+    about_mobile:
+      by: 'por'
+      back: '< Voltar'
+    project_embed:
+      insert: 'Insira um widget em seu site'
+    mobile_video:
+      read_more: "Leia mais"
     metrics:
       titles:
         confirmed_by_day: 'Total de apoios confirmados por dia'
@@ -19,6 +26,7 @@ pt:
       a_project_by_html: Um projeto de %{link} no
     posts:
       project_post:
+        exclusive: 'Post exclusivo para apoiadores.'
         unavailable: Esta novidade só está disponível para apoiadores.
         contribute: Apoie
         unavailable_contribute: este projeto para visualizá-la.
@@ -56,6 +64,8 @@ pt:
         reports: Relatórios
         posts: Novidades
     project_main:
+      post_call: 'Toda novidade publicada no Catarse é enviada diretamente para o email de quem já apoiou seu projeto e também fica disponível para visualização no site. Você pode optar por deixá-la pública, ou visível somente para seus apoiadores aqui nesta aba.'
+      send_post: 'Escrever novidade'
       share: "Compartilhe"
       tweet: "Tweet"
       contribute_project:
@@ -67,7 +77,7 @@ pt:
           rejected: "Este projeto não foi aceito. Não é possível realizar um apoio."
           in_analysis: "Este projeto está em análise e ainda não está aberto para receber apoios."
           successful: "Este projeto foi bem-sucedido e foi financiado em %{date}"
-          waiting_funds: "Aguardando a confirmação de boletos para saber se este projeto será financiado."
+          waiting_funds: "O prazo de captação desse projeto está encerrado. Estamos aguardando a confirmação dos últimos pagamentos."
           draft: "Este projeto é apenas um rascunho e ainda não pode receber apoios."
         submit: Apoiar este projeto
       project_by: projeto por

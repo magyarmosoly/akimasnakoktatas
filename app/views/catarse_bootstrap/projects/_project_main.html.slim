@@ -5,7 +5,10 @@ section.section
         #project_about.content.w-col.w-col-8 = render 'project_about'
 
         #project_posts.content.w-col.w-col-8.w-hidden[data-path=project_posts_path(project_id: @project.id)]
-          = render 'edit_action', text: 'Escrever novidade', anchor: 'posts'
+          - if policy(@project).update? && @posts_count == 0
+            .w-hidden-small.w-hidden-tiny
+              .fontsize-base.u-marginbottom-30.u-margintop-20= t('.post_call')
+          = render 'edit_action', text: t('.send_post'), anchor: 'posts'
           .posts
             | &nbsp;
           #posts-loading.loader.u-text-center.w-col.w-col-12 = image_tag "catarse_bootstrap/loader.gif"
@@ -73,6 +76,6 @@ section.section
               = t('.tweet')
         #rewards.u-marginbottom-30[data-index_path=project_rewards_path(@project)]
           .u-text-center = image_tag 'catarse_bootstrap/loader.gif'
-        - if @project.can_show_funding_period?
+        - if @project.published?
           .fontsize-small.fontweight-semibold.u-text-center-small-only = t('.funding_period')
           .fontsize-small.u-text-center-small-only = "#{@project.display_online_date} - #{@project.display_expires_at}  (#{t('datetime.distance_in_words.x_days', count: @project.online_days)})"

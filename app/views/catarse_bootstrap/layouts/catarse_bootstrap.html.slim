@@ -25,8 +25,8 @@ html
       meta property="fb:app_id"       content=CatarseSettings[:facebook_app_id]
       meta property="og:description"  content=(t('projects.index_header.title') + '. ' +  t('projects.index_header.subtitle'))
 
-  body#catarse_bootstrap[data-controller-name=controller_name data-action=action_name data-user="#{current_user.try(:to_analytics_json)}" data-mobile=browser.mobile?.to_s]
-    = render 'layouts/global_alert'
+  body#catarse_bootstrap[data-controller-name=controller_name data-action=action_name data-user="#{current_user.try(:to_analytics_json)}" data-id=params[:id] data-mobile=browser.mobile?.to_s]
+    /= render 'layouts/global_alert'
     = render 'layouts/new_zendesk'
     = render_facebook_sdk
     = render 'layouts/flash' if notice.present?
@@ -39,8 +39,6 @@ html
     = yield :js
   - if Rails.env.production?
     = render 'layouts/crazzy_egg'
-    = render 'layouts/hot_jar'
     = render_google_analytics_script
     = render_mixpanel_script
     = javascript_include_tag "//cdn.optimizely.com/js/2188501553.js"
-    = render 'layouts/intercom'

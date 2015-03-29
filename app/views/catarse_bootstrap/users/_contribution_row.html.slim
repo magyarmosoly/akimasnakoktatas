@@ -1,12 +1,12 @@
 .w-row.w-hidden-small.w-hidden-tiny.card.card-secondary
   .w-col.w-col-3
-    .fontsize-small.fontweight-semibold Projetos que apoiei
+    .fontsize-small.fontweight-semibold= t('.contributed_projects') 
   .w-col.w-col-2
-    .fontsize-small.fontweight-semibold Valor do apoio
+    .fontsize-small.fontweight-semibold= t('.contribution_value') 
   .w-col.w-col-3
-    .fontsize-small.fontweight-semibold Status do apoio
+    .fontsize-small.fontweight-semibold= t('.contribution_status') 
   .w-col.w-col-4
-    .fontsize-small.fontweight-semibold Recompensa
+    .fontsize-small.fontweight-semibold= t('.reward') 
 
 - collection.each do |contribution|
   - project = contribution.project
@@ -24,17 +24,14 @@
     .w-col.w-col-3.u-marginbottom-10
       .w-hidden-main.w-hidden-medium.fontsize-smallest.fontweight-semibold Status do apoio:
       .fontsize-smallest 
-        - if contribution.is_credit_card?
-          | Cartão de credito #{contribution.installments}xR$#{contribution.installment_value}
-        - else
-          | Boleto bancario
+        = "#{contribution.decorate.display_payment_details} #{contribution.decorate.display_installment_details}"
       .fontsize-smallest
         - if contribution.waiting_confirmation?
           | Aguardando confirmação do pagamento
         - elsif contribution.confirmed?
           | Confirmado em #{contribution.decorate.display_date(:confirmed_at)}
         - elsif contribution.refunded?
-          | Rembolsado em #{contribution.decorate.display_date(:refunded_at)}
+          | Reembolsado em #{contribution.decorate.display_date(:refunded_at)}
         - elsif contribution.requested_refund?
           | Reembolso solicitado em #{contribution.decorate.display_date(:requested_refund_at)}
     .w-col.w-col-4
@@ -43,8 +40,8 @@
         - if contribution.reward
           = contribution.reward.display_description
         - else
-          |Não selecionou recompensa
+          = t('.no_reward')
       - if contribution.reward.try(:display_deliver_estimate).present?
         .fontsize-smallest.lineheight-looser
-          span.fontweight-semibold Estimativa de entrega:
+          span.fontweight-semibold= t('.delivery_estimate') 
           =< contribution.reward.try(:display_deliver_estimate)

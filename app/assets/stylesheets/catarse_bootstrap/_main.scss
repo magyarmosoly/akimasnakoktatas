@@ -108,6 +108,7 @@ p {
 .section {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: white;
 }
 .section.section-gray-one {
   margin-top: 60px;
@@ -139,6 +140,20 @@ p {
   position: relative;
   padding-top: 48px;
   padding-bottom: 176px;
+}
+.section.loadmore {
+  margin-top: -80px;
+}
+.section.gray {
+  background-color: #f1f4f4;
+}
+.section.blue-sea {
+  padding-top: 115px;
+  padding-bottom: 115px;
+  background-color: #4bb1d0;
+}
+.section.footer {
+  margin-bottom: -80px;
 }
 .bootstrap-color-swatch {
   position: static;
@@ -535,9 +550,9 @@ p {
   font-weight: 600;
 }
 .main-header {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 8px;
-  padding-left: 15px;
+  padding-left: 18px;
   border-bottom: 1px solid rgba(37, 49, 57, 0.6);
   background-color: #3f4752;
 }
@@ -572,7 +587,7 @@ p {
   top: 5px;
   right: -73px;
   display: inline-block;
-  margin: 0px 5px 0px 0px;
+  margin: 0px 4px 0px 0px;
   padding: 9px 22px;
   border-radius: 4px;
   -webkit-transition: all 500ms ease;
@@ -1039,7 +1054,7 @@ p {
   color: #f1f4f4;
 }
 .page-header.hero-start {
-  margin-top: -64px;
+  margin-top: -74px;
   margin-bottom: -60px;
   padding-top: 94px;
   background-image: url('../images/hero-start.jpg');
@@ -1749,7 +1764,7 @@ p {
 .header-search {
   position: relative;
   display: inline-block;
-  width: 40%;
+  width: 28%;
   height: 40px;
   margin-bottom: 0px;
   margin-left: 20px;
@@ -1758,12 +1773,11 @@ p {
   text-align: center;
 }
 .header-logo {
+  position: relative;
   display: inline-block;
-  width: 32px;
-  max-width: 32px;
-  margin-right: 20px;
-  margin-left: 0px;
-  padding: 0px;
+  width: 110px;
+  margin-right: 35px;
+  float: left;
   -webkit-transition: all 500ms ease;
   transition: all 500ms ease;
 }
@@ -2006,6 +2020,11 @@ p {
 .card-reward {
   position: relative;
 }
+.card-reward.sele {
+  border-width: 2px;
+  border-color: #1ca34a;
+  background-color: rgba(124, 193, 66, 0.09);
+}
 .card-gone {
   position: relative;
   color: rgba(121, 128, 139, 0.36);
@@ -2232,13 +2251,14 @@ p {
 .btn-terciary {
   border-style: solid;
   border-width: 1px;
-  border-color: rgba(121, 128, 139, 0.27);
+  border-color: rgba(121, 128, 139, 0.78);
   background-color: transparent;
   color: #79808b;
 }
 .btn-terciary:hover {
-  border-color: rgba(121, 128, 139, 0.38);
+  border-color: #79808b;
   background-color: white;
+  color: #3f4752;
 }
 .btn-no-border {
   border: 1px solid transparent;
@@ -2459,7 +2479,7 @@ p {
   overflow-x: hidden;
   overflow-y: hidden;
   height: 220px;
-  margin-top: -65px;
+  margin-top: -75px;
   padding-top: 110px;
   padding-bottom: 50px;
   background-color: #3f4752;
@@ -2554,7 +2574,7 @@ p {
   color: #f1f2f3;
 }
 .hero-search {
-  margin-top: -65px;
+  margin-top: -75px;
   margin-bottom: 30px;
   padding-top: 110px;
   background-color: #5b97c6;
@@ -2599,7 +2619,7 @@ p {
 .hero-medium {
   position: relative;
   height: 370px;
-  margin-top: -65px;
+  margin-top: -75px;
   padding-top: 130px;
 }
 .logo-footer {
@@ -2663,6 +2683,113 @@ p {
   background-position: 50% 50%;
   background-size: cover;
   color: white;
+}
+.header-logo-image {
+  max-width: 110px;
+}
+.project-nav-fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: 50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f1f4f4;
+  box-shadow: rgba(0, 0, 0, 0.20) 1px 1px 3px 0px;
+}
+.btn-back-fixed {
+  margin-top: -7px;
+}
+.hero-hello {
+  position: relative;
+  z-index: -20;
+  height: 840px;
+  margin-top: -70px;
+  margin-bottom: 940px;
+  padding-top: 200px;
+  background-image: url('../images/hero-hello-blue.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+}
+.hero-hello.bottom {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: -30;
+  margin-bottom: 0px;
+  padding-top: 140px;
+  background-color: #f1f4f4;
+  background-image: none;
+  background-position: 0% 0%;
+  background-size: auto;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  color: #3f4752;
+}
+.card-big {
+  margin-bottom: 40px;
+  padding: 70px 80px;
+  border-radius: 3px;
+  background-color: white;
+  text-align: center;
+}
+.section-cta {
+  height: 485px;
+}
+.section-cta.video4anos {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url('../images/hello-cta-video.jpg');
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.section-cta.featured-user {
+  background-color: #4389bf;
+}
+.hello-lamp {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: -10;
+  width: 88px;
+  margin-top: 390px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.hello-network {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  z-index: -30;
+  width: 853px;
+  margin-top: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.btn-play {
+  -webkit-transition: all 502ms ease;
+  transition: all 502ms ease;
+}
+.btn-play:hover {
+  -webkit-transform: scale(1.14);
+  -ms-transform: scale(1.14);
+  transform: scale(1.14);
+}
+.quote {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding-left: 29px;
+  border-left: 1px solid #ddd;
+  color: #79808b;
+  font-style: italic;
+  font-weight: 400;
 }
 html.w-mod-js *[data-ix="fade-in"] {
   opacity: 0;
@@ -2732,9 +2859,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     background-color: #f1f4f4;
   }
   .main-header {
-    padding-top: 8px;
-    padding-bottom: 4px;
-    padding-left: 5px;
+    padding: 12px 4px 0px 18px;
   }
   .img-logo {
     width: 29px;
@@ -2743,8 +2868,8 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
   .header-link {
     position: static;
     display: inline-block;
-    margin-right: 1px;
-    padding: 6px 15px;
+    margin-right: 5px;
+    padding: 6px 10px;
     font-size: 13px;
   }
   .header-link:hover {
@@ -2872,6 +2997,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     font-size: 13px;
   }
   .user-profile {
+    width: 75px;
     margin-right: -10px;
   }
   .dropdown-list.user-menu.w--open {
@@ -2881,24 +3007,25 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-left: -520px;
   }
   .user-avatar {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
   }
   .dropdown-toggle {
     padding-right: 10px;
+    padding-left: 5px;
   }
   .dropdown-toggle.w--open {
     display: block;
   }
   .header-search {
-    width: 42%;
+    width: 28%;
     margin-left: 0px;
     font-size: 12px;
   }
   .header-logo {
-    width: 28px;
-    max-width: 28px;
-    margin-right: 10px;
+    width: 88px;
+    margin-top: -3px;
+    margin-right: 20px;
     margin-left: 0px;
   }
   .postfix {
@@ -3048,6 +3175,9 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     height: 330px;
     padding-top: 120px;
   }
+  .header-logo-image {
+    max-width: 88px;
+  }
 }
 @media (max-width: 767px) {
   h2 {
@@ -3122,9 +3252,14 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     display: none;
   }
   .main-header {
+    position: relative;
     padding-top: 7px;
-    padding-bottom: 2px;
-    padding-left: 3px;
+    padding-bottom: 4px;
+    padding-left: 5px;
+  }
+  .header-link {
+    margin-right: 10px;
+    margin-left: 10px;
   }
   .pre-header {
     padding-top: 19px;
@@ -3193,6 +3328,9 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-bottom: 0px;
     padding-top: 25px;
     padding-bottom: 20px;
+  }
+  .page-header.hero-start {
+    margin-top: -84px;
   }
   .project-about-highlight {
     margin-top: 0px;
@@ -3343,7 +3481,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     text-align: center;
   }
   .user-profile {
-    width: 88px;
+    width: 72px;
     margin-top: -7px;
     margin-right: -12px;
   }
@@ -3364,17 +3502,15 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     width: 100%;
   }
   .header-logo {
-    display: inline-block;
-    width: 24px;
-    max-width: 24px;
-    margin-right: 10px;
-    margin-left: 0px;
-    float: none;
+    width: 85px;
+    margin-top: 0px;
+    margin-right: 0px;
   }
   .u-marginbottom-60 {
     padding-right: 0px;
   }
   .u-text-center-small-only {
+    display: block;
     text-align: center;
   }
   .dropdown-icon {
@@ -3388,8 +3524,8 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     height: 35px;
   }
   .thumb.big {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
   }
   .project-name {
     padding-right: 63px;
@@ -3455,6 +3591,9 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     height: 380px;
     padding-top: 100px;
   }
+  .hero-back {
+    margin-top: -90px;
+  }
   .card-project-meter.successful {
     text-align: center;
   }
@@ -3468,9 +3607,11 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
   }
   .hero-half {
     height: 310px;
+    margin-top: -90px;
   }
   .hero-small {
-    height: 140px;
+    height: 160px;
+    margin-top: -85px;
     padding-top: 90px;
     padding-bottom: 30px;
   }
@@ -3491,7 +3632,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-top: -15px;
   }
   .content-hero-profile {
-    margin-top: 80px;
+    margin-top: 110px;
   }
   .btn-category {
     margin-bottom: 10px;
@@ -3509,6 +3650,8 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     padding-bottom: 10px;
   }
   .hero-search {
+    margin-top: -88px;
+    padding-top: 114px;
     background-position: 50% 50%;
   }
   .following {
@@ -3518,8 +3661,26 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-bottom: 20px;
   }
   .hero-medium {
-    height: 250px;
-    padding-top: 100px;
+    height: 263px;
+    margin-top: -89px;
+    padding-top: 131px;
+  }
+  .header-controls-mobile {
+    margin-top: 8px;
+    margin-bottom: -5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-top: 1px solid rgba(241, 242, 243, 0.12);
+    border-bottom: 1px solid rgba(241, 242, 243, 0.12);
+    text-align: center;
+  }
+  .project-nav-fixed {
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    box-shadow: rgba(0, 0, 0, 0.43) 0px 1px 10px 0px;
   }
 }
 @media (max-width: 479px) {
@@ -3572,7 +3733,14 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     top: -64px;
   }
   .main-header {
-    padding-left: 0px;
+    padding-bottom: 4px;
+  }
+  .header-link {
+    margin-right: 5px;
+    margin-left: 5px;
+    padding-right: 6px;
+    padding-left: 6px;
+    font-size: 11px;
   }
   .headingcenter {
     font-size: 24px;
@@ -3634,6 +3802,9 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-bottom: 0px;
     padding-top: 15px;
     padding-bottom: 16px;
+  }
+  .page-header.hero-start {
+    margin-top: -94px;
   }
   .project-about-highlight {
     padding-right: 20px;
@@ -3738,7 +3909,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-left: 5%;
   }
   .user-profile {
-    width: 85px;
+    width: 69px;
     margin-top: -5px;
     margin-right: -18px;
   }
@@ -3761,8 +3932,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-left: 0px;
   }
   .header-logo {
-    width: 24px;
-    padding: 0px;
+    width: 85px;
   }
   .btn-dark.btn-attached {
     width: 100%;
@@ -3788,8 +3958,8 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     background-color: white;
   }
   .thumb.big {
-    width: 90px;
-    height: 90px;
+    width: 70px;
+    height: 70px;
   }
   .project-name {
     padding-right: 10px;
@@ -3816,11 +3986,16 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     padding-right: 16px;
     padding-left: 16px;
   }
+  .hero-back {
+    margin-top: -95px;
+  }
   .hero-half {
     height: 320px;
+    margin-top: -95px;
     padding: 80px 15px 30px;
   }
   .hero-small {
+    margin-top: -95px;
     padding-top: 90px;
     padding-bottom: 20px;
   }
@@ -3829,7 +4004,7 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     margin-top: 0px;
   }
   .content-hero-profile {
-    margin-top: 80px;
+    margin-top: 115px;
     padding-right: 30px;
     padding-left: 30px;
   }
@@ -3841,7 +4016,8 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     line-height: 16px;
   }
   .hero-search {
-    padding-top: 80px;
+    margin-top: -95px;
+    padding-top: 106px;
     background-position: 50% 50%;
     background-size: cover;
   }
@@ -3854,7 +4030,13 @@ html.w-mod-js *[data-ix="bt-dashboard-2"] {
     font-size: 11px;
   }
   .hero-medium {
-    padding-top: 90px;
+    margin-top: -95px;
+    padding-top: 117px;
+  }
+  .header-controls-mobile {
+    margin-bottom: -5px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 }
 

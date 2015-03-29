@@ -22,7 +22,8 @@ Catarse::Application.routes.draw do
   mount CatarseMoip::Engine => "/", as: :catarse_moip
   mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseApi::Engine => "/api", as: :catarse_api
-#  mount CatarseWepay::Engine => "/", as: :catarse_wepay
+ #mount CatarseWepay::Engine => "/", as: :catarse_wepay
+  mount Dbhero::Engine => "/dbhero", as: :dbhero
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
   resources :categories, only: [] do
@@ -39,6 +40,7 @@ Catarse::Application.routes.draw do
       post :sort, on: :member
     end
     resources :contributions, {controller: 'projects/contributions'} do
+      get :fallback_create, to: 'projects/contributions#create', on: :collection
       put :credits_checkout, on: :member
     end
 
@@ -62,6 +64,7 @@ Catarse::Application.routes.draw do
       get :unsubscribe_notifications
       get :credits
       get :settings
+      get :billing
       get :reactivate
     end
 

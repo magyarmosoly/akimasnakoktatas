@@ -19,6 +19,7 @@ gem 'state_machine', require: 'state_machine/core'
 
 # Database and data related
 gem 'pg', '0.17.1'
+gem 'dbhero', '~> 1.0.2'
 gem 'postgres-copy'
 gem 'pg_search'
 gem 'i18n_alchemy'
@@ -36,7 +37,7 @@ gem 'mixpanel-ruby'
 # Payment engines
 gem 'catarse_paypal_express', '3.0.2'
 gem 'catarse_moip', '~> 3.1.1'
-gem 'catarse_pagarme', '2.4.10'
+gem 'catarse_pagarme', '2.5.1'
 
 gem 'activemerchant', '1.44.1'
 #gem 'catarse_paypal_express', path: '../catarse_paypal_express'
@@ -77,7 +78,7 @@ gem 'mail_form'
 gem "auto_html"
 gem "RedCloth"
 gem 'kaminari'
-gem 'redactor-rails'
+gem 'redactor-rails', github: 'catarse/redactor-rails'
 
 # Uploads
 gem 'carrierwave', '~> 0.10.0'
@@ -160,7 +161,7 @@ end
 
 gem 'sass-rails', '~> 4.0.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem "compass-rails"
+gem 'compass-rails', '~> 2.0.4'
 gem 'uglifier'
 gem 'compass-960-plugin'
 gem 'sprockets', '~> 2.10.1'

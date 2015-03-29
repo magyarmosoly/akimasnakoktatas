@@ -1,5 +1,7 @@
 # coding: utf-8
 class Project < ActiveRecord::Base
+  PUBLISHED_STATES = ['online', 'waiting_funds', 'successful', 'failed']
+
   include PgSearch
 
   include Shared::StateMachineHelpers
@@ -15,7 +17,7 @@ class Project < ActiveRecord::Base
 
   mount_uploader :uploaded_image, ProjectUploader
 
-  delegate  :display_online_date, :display_status, :progress, :display_progress,
+  delegate  :display_online_date, :display_status, :progress, 
             :display_image, :display_expires_at, :remaining_text, :time_to_go,
             :display_pledged, :display_goal, :remaining_days, :progress_bar,
             :status_flag, :state_warning_template, :display_card_class, :display_errors, to: :decorator
@@ -139,16 +141,8 @@ class Project < ActiveRecord::Base
     ['online', 'waiting_funds', 'successful', 'approved'].include? state
   end
 
-  def can_show_funding_period?
-    ['online', 'waiting_funds', 'successful', 'failed'].include? state
-  end
-
-  def can_update_account?
-    account.invalid? || ['online', 'waiting_funds', 'successful', 'failed'].exclude?(state)
-  end
-
   def can_show_preview_link?
-    ['draft', 'approved', 'rejected', 'in_analysis'].include? state
+    !published?
   end
 
   def subscribed_users
@@ -164,11 +158,11 @@ class Project < ActiveRecord::Base
   end
 
   def pledged
-    project_total.try(:pledged).to_f
+    @pledged ||= project_total.try(:pledged).to_f
   end
 
   def total_contributions
-    project_total.try(:total_contributions).to_i
+    @total_contributions ||= project_total.try(:total_contributions).to_i
   end
 
   def total_payment_service_fee
@@ -227,8 +221,8 @@ class Project < ActiveRecord::Base
     end
   end
 
-  def already_deployed?
-    self.online? || self.successful? || self.failed? || self.waiting_funds?
+  def published?
+    PUBLISHED_STATES.include? state
   end
 
   def expires_fragments *fragments
@@ -236,6 +230,17 @@ class Project < ActiveRecord::Base
     fragments.each do |fragment|
       base.expire_fragment([fragment, id])
     end
+  end
+
+  def to_analytics_json
+    {
+      id: self.id,
+      permalink: self.permalink,
+      total_contributions: self.total_contributions,
+      pledged: self.pledged,
+      project_state: self.state,
+      category: self.category.name_pt
+    }.to_json
   end
 
   private

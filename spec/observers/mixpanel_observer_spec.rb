@@ -12,6 +12,7 @@ RSpec.describe MixpanelObserver do
       contributions: contribution.user.total_contributed_projects,
       has_contributions: (contribution.user.total_contributed_projects > 0),
       created_projects: contribution.user.projects.count,
+      published_projects: contribution.user.published_projects.count,
       has_online_project: contribution.user.has_online_project?,
       project: contribution.project.name,
       payment_method: contribution.payment_method,
@@ -30,6 +31,7 @@ RSpec.describe MixpanelObserver do
       contributions: user.total_contributed_projects,
       has_contributions: (user.total_contributed_projects > 0),
       created_projects: user.projects.count,
+      published_projects: user.published_projects.count,
       has_online_project: user.has_online_project?
     }
   end
@@ -61,7 +63,7 @@ RSpec.describe MixpanelObserver do
       let(:user){ project.user }
 
       it "should set user has_online_project in mixpanel" do
-        expect(people).to receive(:set).with(user.id.to_s, project_owner_properties.merge(has_online_project: true), user.current_sign_in_ip)
+        expect(people).to receive(:set).with(user.id.to_s, project_owner_properties.merge(has_online_project: true, published_projects: 1), user.current_sign_in_ip)
         project.push_to_online
       end
     end
@@ -91,7 +93,7 @@ RSpec.describe MixpanelObserver do
   end
 
   describe "#after_update" do
-    [:video_url, :about, :headline, :uploaded_image].each do |attribute|
+    [:video_url, :about_html, :headline, :uploaded_image].each do |attribute|
       context "when we update a project's #{attribute}" do
         it "should send tracker a track call with the change" do
           expect(tracker).to receive(:track).with(project.user.id.to_s, "Project owner engaged with Catarse", project_owner_properties.merge(action: "Updated #{attribute}"), project.user.current_sign_in_ip)
@@ -106,7 +108,7 @@ RSpec.describe MixpanelObserver do
       it "should send tracker a track call with the change" do
         expect(tracker).to receive(:track).with(user.id.to_s, "Project owner engaged with Catarse", project_owner_properties.merge(action: "Updated profile"), project.user.current_sign_in_ip)
         expect(people).to receive(:set).with(user.id.to_s, project_owner_properties.merge(action: "Updated profile"), project.user.current_sign_in_ip)
-        user.update_attributes bio: 'test'
+        user.update_attributes about_html: 'test'
       end
     end
   end
