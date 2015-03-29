@@ -34,7 +34,8 @@ hu:
       account_title: bank details
       account_subtitle_html: We need the data below to make a financial transfer for
         successful projects .
-      submit: save
+      account_edit_disabled_html: 'The following data were entered by you at the time of publication of your project. To avoid errors in the transfer of resources , the issue of this data was blocked so your project went live . If you want to change them , is only %{link} informing the changes you want to do .'
+      submit: Mentés
     dashboard_home_templates:
       status: 'Status:'
       project_numbers:
@@ -128,6 +129,7 @@ hu:
       add_reward: Add price option
       subtitle: Show what you get for each pricing option.
       reward: Price option
+      submit: Mentés
     dashboard_preview:
       header_subtitle: It's time for feedback !
       header_text: Share the link below with your friends and enjoy the moment to

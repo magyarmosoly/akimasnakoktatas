@@ -1,6 +1,13 @@
 ---
 hu:
   projects:
+    about_mobile:
+      by: ''
+      back: 'Vissza'
+    project_embed:
+      insert: 'Beágyazás saját oldalra'
+    mobile_video:
+      read_more: "Olvass tovább"
     metrics:
       titles:
         confirmed_by_day: Total daily confirmed support
@@ -20,6 +27,7 @@ hu:
       a_project_by_html: A %{link} campaign in
     posts:
       project_post:
+        exclusive: Csak támogatók láthatják
         unavailable: This novelty is only available to supporters.
         contribute: Support
         unavailable_contribute: this campaign to view it .
@@ -57,8 +65,10 @@ hu:
         reports: reports
         posts: news
     project_main:
-      twitter_profile: Profile no Twitter
-      facebook_profile: Profile no Facebook
+      post_call: All news published in Catharsis is sent directly to the e-mail who has supported your project and is also available for viewing on the site . You can choose to let it public or visible only to his supporters here on this tab.
+      send_post: Send post
+      twitter_profile: Twitter profil
+      facebook_profile: Facebook profil
       author_website: Site
       share: Share It
       tweet: Tweet

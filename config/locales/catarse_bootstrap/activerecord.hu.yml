@@ -202,7 +202,7 @@ hu:
               blank: The period of storage can not be blank
               greater_than: The deadline for collection must be greater than 0 days
               not_a_number: The deadline for collection should be a number of days
-            about:
+            about_html:
               blank: The campaign description can not be blank
             headline:
               blank: The catchphrase of the campaign can not be blank
@@ -239,7 +239,14 @@ hu:
       posts: Deleted successfully Novelty
     video_regex_validation: Youtube or Vimeo only URLs are accepted
   contribution:
-    project_should_be_online: You can not support a campaign that is not in the air
+    payment_details:
+      creditos: "Créditos"
+      boleto_bancario: "Csekk"
+      cartao_de_credito: "Hitelkártya"
+      debito_bancario: "Banki terhelés"
+      cartao_debito: "Bankkártya"
+      transferencia_bancaria: "Banki átutalás"
+  project_should_be_online: You can not support a campaign that is not in the air
     reward_must_be_from_project: must be of the same design
     should_not_contribute_if_maximum_contributions_been_reached: has reached its maximum
       number of supporters

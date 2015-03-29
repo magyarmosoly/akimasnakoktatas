@@ -1,8 +1,22 @@
 ---
 hu:
   users:
+    profile:
+      user_since: "%{date} óta felhasználó"
+      no_project_contribution: "Nem támogatott még projektet"
+      single_project_contribution: "Egy projetet támogatott"
+      multiple_project_contribution: "%{n_projects} projektet támogatott"
+      single_project_created: "Egy projektet hozott létre"
+      multiple_project_created: "%{n_projects} projektet hozott létre"
+    contribution_row:
+      contributed_projects: "Támogatott projektek"
+      contribution_value: "Támogatás mértéke"
+      contribution_status: "Támogatás státusza"
+      reward: Jutalom
+      no_reward: "Nem választottál jutalmat"
+      delivery_estimate: "Jutalom kiküldésének várható dátuma:"
     failed_reactivation: The link reactivation is invalid , please contact our team.
-    reactivated: Welcome back , your account has been reactivated.
+    reactivated: Welcome back, your account has been reactivated.
     project:
       confirmed: confirmed
       refunded: refunded
