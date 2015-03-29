@@ -1,34 +1,33 @@
+---
 hu:
   layouts:
     footer:
       links:
-        jobs: Trabalhe conosco
+        jobs: Work with us
         blog: Blog
-        contact: Contato
-        press: Imprensa
-        discover: Explore projetos
-        start: 'Como funciona'
-        expiring: Na reta final
+        contact: contact
+        discover: Discover campaigns
+        start: How it works
+        expiring: In the final stretch
         facebook: Facebook
-        faq: Ajuda
-        guides: Guia dos Realizadores
+        faq: help
+        guides: Guide of Directors
         feedback: Feedback
         github: Github
         instagram: Instagram
-        near: Próximos a mim
-        press: Imprensa
-        privacy: Política de privacidade
-        recents: Recentes
-        recommended: Recomendados
-        submit: Comece seu projeto
-        terms: Termos de uso
+        near: Near Me
+        press: press
+        privacy: Privacy Policy
+        recents: recent
+        recommended: recommended
+        submit: Submit your campaign
+        terms: Terms of use
         twitter: Twitter
       texts:
-        copyleft: Feito com amor.
+        copyleft: producerun.com
       titles:
-        about: Ajuda
-        contact: Bem-vindo
-        newsletter: Assine nossa news
-        sitemap: Navegue
-        social: Redes sociais
-
+        about: help
+        contact: You welcome
+        newsletter: Subscribe to our news
+        sitemap: Browse
+        social: social networks

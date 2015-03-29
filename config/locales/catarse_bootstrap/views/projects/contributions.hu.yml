@@ -1,97 +1,104 @@
+---
 hu:
   projects:
     contributions:
-      no_estimate: "Não disponível"
-      you_selected: "Você escolheu essa!"
+      no_estimate: not available
+      you_selected: You chose this !
       contribute_text:
-        credits_tab: Meus créditos
+        credits_tab: my credits
       checkout:
-        no_credits: Você não possui créditos suficientes para realizar este apoio.
-        success: Seu apoio foi realizado com sucesso. Muito obrigado!
+        no_credits: You do not have enough credits to make this support.
+        success: Their support was successful .
       contribution:
-        anonymous_contribution: Apoiador anônimo
-        anonymous_description: Optou por permanecer incógnito
-        no_reward: Este apoiador não selecionou nenhuma recompensa
+        anonymous_contribution: anonymous supporter
+        anonymous_description: Optou to remain incognito
+        no_reward: This supporter did not select any reward
       selected_reward:
-        review_without_reward_html: Você irá apoiar com <strong>%{value}</strong>
-          e não quer nenhuma recompensa por seu apoio.
-        value: 'Valor do apoio'
-        reward: 'Recompensa selecionada'
-        edit: 'Editar'
+        review_without_reward_html: You will support with <strong>%{value}</strong>
+          and do not want any reward for their support.
+        value: Support amount
+        reward: selected reward
+        edit: edit
       edit:
-        payment_slip_disclaimer: "Caso o projeto não seja bem-sucedido, nós faremos o reembolso do seu apoio. Os dados bancários informados aqui serão usados para isso."
-        review_errors_title: "Verifique os dados informados"
-        review_errors: "Alguma informação está faltando ou não foi informada corretamente, corrija todos os campos marcados em vermelho e tesnte novamente"
-        anonymous_confirmation_title: "Você tem certeza que quer que seu apoio seja anônimo?"
-        anonymous_confirmation: "O valor do seu apoio não será divulgado para ninguém além do dono do projeto. Somente o proponente terá acesso a essa informação, independente se o seu investimento seja público ou anônimo."
-        anonymous_contribution: "Quero que meu apoio seja anônimo"
+        payment_slip_disclaimer: If the campaign is not successful , we will refund
+          your support.
+        review_errors_title: Check the data reported
+        review_errors: Some information is missing or not reported correctly , correct
+          all the fields in red and tesnte again
+        anonymous_confirmation_title: Are you sure you want your support to be anonymous
+          ?
+        anonymous_confirmation: The value of your support will not be disclosed to
+          anyone other than the project owner .
+        anonymous_contribution: I want my support to be anonymous
         form_labels:
-          user_another_card: "Usar outro cartão de crédito"
-          payment_card_number: 'Número do cartão'
-          payment_card_flag: 'Bandeira'
-          payment_card_source: 'Cód. Segurança'
-          payment_card_source_short: 'CVC'
-          payment_card_date: 'Expiração (mm/yy)'
-          payment_card_name: 'Nome impresso no cartão de crédito'
-          payment_card_installments: 'Parcelas'
-        installment_with_tax: 'sem juros'
-        transaction_error: 'Transação recusada, por favor verifique novamente seus dados ou entre em contato com o banco/emissor do cartão para maiores informações.'
-        pagarme_warning_html: "O Catarse está em fase de teste de um novo meio de pagamento que facilitará o apoio financeiro e o eventual reembolso dos valores aos apoiadores. Dessa forma, alertamos que poderão ser exigidos dados extras, além daqueles mencionados nos Termos de Uso para apoiar este projeto. Qualquer dúvida ou dificuldade, entre em contato conosco pelo e-mail %{mailto} . Obrigado."
-        payment_save_card: 'Quero salvar meu cartão de crédito para facilitar apoios futuros.'
-        reward_sold_out: Essa recompensa está esgotada. Inicie um novo apoio.
-        page-title: Apoie o %{name}
-        credits_preview_html: "Você possui <strong>%{credits}</strong> em créditos para realizar esse apoio <strong>até o dia 10/11</strong>, conforme <a href='http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/' target='__blank'>novas regras</a> divulgadas pelo Catarse."
-        credits_submit: 'Efetuar pagamento'
-        credits_title: 'Pagamento com créditos'
-        insufficient_credits: "Você possui %{credits} em créditos. Esse valor não é suficiente para realizar o apoio, por favor escolha outro meio de pagamento."
-        choose_payment: "Escolha o meio de pagamento"
-        choose_payment_subtitle: "PAGAMENTO SEGURO"
-        cpf: 'Para prosseguir, por favor informe:'
-        credits_notice_html: Este apoio será pago com seus créditos. Após a confirmação,
-          você ficará com um saldo de <strong>%{credits}</strong> em créditos para
-          apoiar outros projetos.
-        live_in_brazil: Moro no Brasil. ( Desmarque caso o seu apoio seja internacional
-          )
-        number_card: Dados do cartão
-        owner_card: Dados do titular do cartão
-        payment_account: Pagamento com Débito em Conta
-        payment_boleto: Pagamento com Boleto
-        payment_card: Pagamento com Cartão
-        review_with_reward_html: 'Você irá apoiar com <strong>%{value}</strong> e
-          ganhará a seguinte recompensa:'
-        select_account: 'Você será redirecionado para o site do seu banco:'
-        select_boleto: 'Para prosseguir, por favor selecione:'
+          user_another_card: Use another credit card
+          payment_card_number: Card number
+          payment_card_flag: flag
+          payment_card_source: Cod. Security
+          payment_card_source_short: CVC
+          payment_card_date: Expiration ( mm / yy )
+          payment_card_name: The name on credit card
+          payment_card_installments: plots
+        installment_with_tax: without interest
+        transaction_error: Transaction refused, please double check your data or contact
+          the bank / card issuer for more information.
+        pagarme_warning_html: The ProduceRun is in testing phase of a new means of
+          payment that facilitate financial support and the possible repayment of
+          the amounts to supporters .
+        payment_save_card: I want to save my credit card to facilitate future support
+          .
+        reward_sold_out: This reward is exhausted .
+        page-title: Support the %{name}
+        credits_preview_html: You own 8459986593193533%{credits}8896836270477074 in
+          credits to make this support <strong>até day 10/11</strong> as <a href='http://blog.catarse.me/simplificacao-dos-reembolsos-e-o-fim-dos-creditos/'
+          target='__blank'>novas regras</a> released by Catharsis .
+        credits_submit: make Payment
+        credits_title: Pay with credits
+        insufficient_credits: You own %{credits} credits.
+        choose_payment: Choose the payment method
+        choose_payment_subtitle: SECURE PAYMENT
+        cpf: 'To prosseguir , please report :'
+        credits_notice_html: This will be paid with their claims.
+        live_in_brazil: I live in Brazil .
+        number_card: Card data
+        owner_card: Cardholder data
+        payment_account: Payment by Direct Debit
+        payment_boleto: Payment with boletus
+        payment_card: Payment with credit card
+        review_with_reward_html: 'You will support with <strong>%{value}</strong>
+          and earn the following rewards :'
+        select_account: 'You will be redirected to your bank''s website :'
+        select_boleto: 'To continue, please select :'
         submit:
-          credits: Confirmar
-          moip: Efetuar pagamento pelo MoIP
-        subtitle: Estes dados serão informados ao organizador do projeto.
-        title: Preencha e revise os dados para pagamento
-        you_are_about_html: Você está prestes a fazer parte do grupo que faz de tudo
-          para o %{link} acontecer.
+          credits: confirm
+          moip: Make payment by MoIP
+        subtitle: These data will be reported to the campaign organizer.
+        title: Complete and review the data for payment
+        you_are_about_html: You are about to join the group that does everything for
+          %{link} happen.
       new:
-        page-title: Apoie o %{name}
-        title: Oohh yeah!
-        you_have_credits: "Você tem <strong>%{credits}</strong> em créditos para realizar este apoio."
-        choose_reward: Escolha a recompensa e em seguida o valor do apoio
-        choose_value: Digite o valor do seu apoio.
-        minimum_disclaimer: 'A partir de R$ <span id="minimum-value">10</span> está ótimo ;)'
-        next_step: "Revisar e realizar pagamento"
-        no_reward: Obrigado. Eu só quero ajudar o projeto.
+        page-title: Support the %{name}
+        title: Oohh yeah !
+        you_have_credits: You have <strong>%{credits}</strong> in credits to make
+          this support.
+        choose_reward: Choose the reward and then the value of support
+        choose_value: Enter the amount of your support.
+        minimum_disclaimer: From $ <span id="minimum-value">10</span> is great ;)
+        next_step: Review and make pagamento
+        no_reward: Thank U.
       review:
-        PayPal: "PayPal"
-        MoIP: "MoIP"
-        Credits: 'Créditos'
-        error: Ooops. Ocorreu um erro ao registrar seu apoio. Por favor, tente novamente.
+        PayPal: PayPal
+        MoIP: MoIP
+        Credits: credits
+        error: Ooops .
       show:
-        header_subtitle: Sem você talvez este projeto não tivesse uma chance. Bem-vindo
-          ao time!
-        header_title: Muito obrigado! :D
-        moip_message: A verificação da sua transação está em andamento e o código
-          Moip é “%{code}″.<br>Caso tenha alguma dúvida referente a transação, entre
-          em contato com o Moip. Um email será enviado quando o pagamento for confirmado.
-        recommended_projects: 'Você também poderá curtir esses projetos:'
-        text_subtitle: Conte para todo mundo o que você acabou de fazer
-        text_title_html: Você agora é parte do grupo que faz de tudo para o projeto %{link}
-          acontecer.
-        title: Muito obrigado
-
+        header_subtitle: Without you maybe this campaign did not have a chance .
+        header_title: Thank you very much!
+        moip_message: The verification of your transaction is in progress and MoIP
+          code is " %{code} " .<br>Caso have any questions regarding the transaction
+          , please contact MoIP .
+        recommended_projects: 'You may also enjoy these campaigns :'
+        text_subtitle: Tell everyone what you just did
+        text_title_html: You are now part of the group that does everything for the
+          project %{link} happen.
+        title: thank you very much

@@ -1,6 +1,6 @@
+---
 hu:
   errors:
     not_found:
-      text: Você pode ter digitado errado o endereço ou a página pode ter sido movida.
-      title: Não encontramos esse endereço :(
-
+      text: You may have mistyped the address or the page may have moved .
+      title: We could not find this address :(

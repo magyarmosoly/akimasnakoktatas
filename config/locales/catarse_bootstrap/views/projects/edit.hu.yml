@@ -1,169 +1,181 @@
+---
 hu:
   projects:
     reward_fields:
-      edit: "Editar recompensa"
-      reward: Recompensa
-      info_box: "Descreva o valor da recompensa e coloque uma previsão de data de entrega real para os apoiadores. Você também pode limitar uma recompensa e quando o limite é atingido ela aparece como ESGOTADA. Se quiser mudar a ordem que as recompensas aparecem em seu projeto, basta fazer isso arrastando-as para cima ou para baixo."
-      minimum_value: "Valor:"
-      deliver_at: "Previsão de entrega:"
-      description: "Descrição:"
-      limit_reward: "Limitar recompensa"
-      available: "Quantidade disponível"
-      submit: "Salvar"
+      edit: edit price option
+      reward: price option
+      info_box: Describe the value of the price option and put a real delivery date forecast
+        for the supporters.
+      minimum_value: 'value:'
+      deliver_at: 'Estimated delivery :'
+      description: 'description :'
+      limit_reward: limit price option
+      available: Quantity Available
+      submit: save
       index:
-        select_reward: "Selecione essa recompensa"
-        display_remaining: "%{remaining} de %{maximum} disponíveis"
-        dont_want: "Não quero recompensa"
-        limited: Limitada
-        sold_out: Esgotada
+        select_reward: Select this price option
+        display_remaining: "%{remaining} %{maximum} of available"
+        dont_want: I do not want price option
+        limited: limited
+        sold_out: exhausted
         contributions_to_confirm:
-          one: 1 apoio em prazo de confirmação.
-          other: "%{count} apoios em prazo de confirmação."
-        edit_reward: Editar recompensa
-        new_reward: Cadastrar recompensa
-        reward_deliver_time: "<b>Estimativa de Entrega:</b> %{estimate}"
-        reward_title: Para %{minimum} ou mais
+          one: 1 support in term of confirmation.
+          other: "%{count} support in term of confirmation."
+        edit_reward: edit price option
+        new_reward: Sign price option
+        reward_deliver_time: "<b>Estimativa delivery: </b> %{estimate}"
+        reward_title: For %{minimum} or more
     dashboard_user_settings:
-       title: "Dados cadastrais e bancários"
-       subtitle_html: "Com os dados abaixo completos, seu projeto estará pronto para ir ao ar. Após concluir o preenchimento, clique em Salvar. Revise. Se tudo estiver ok, basta apertar o botão Publicar e começar sua campanha!"
-       user_data_title: "Dados cadastrais e endereço"
-       user_data_subtitle_html: "Precisamos dos dados abaixo para emissão de Nota Fiscais para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
-       account_title: "Dados bancários"
-       account_subtitle_html: "Precisamos dos dados abaixo para efetuar a transferência financeira para projetos bem sucedidos. <b>ATENÇÃO: O CPF/CNPJ listado nos dados cadastrais e dados bancários precisa ser o mesmo.</b>"
-       submit: "Salvar"
+      title: Registration and banking Payout Details
+      subtitle_html: You need to quickly fill out these details so we can quickly pay you out after a successfull campaign
+      user_data_title: Registration data and address
+      user_data_subtitle_html: We need the data below for the issuance of Tax Notes
+        for successful projects .
+      account_title: bank details
+      account_subtitle_html: We need the data below to make a financial transfer for
+        successful projects .
+      submit: save
     dashboard_home_templates:
-      status: "Status:"
+      status: 'Status:'
       project_numbers:
-        financed: financiado
-        backed: levantados
-        contributions: apoios
-        left: restantes
+        financed: funded
+        backed: Raised
+        contributions: support
+        left: remaining
       waiting_funds:
-        title: "%{name}, estamos processando os últimos pagamentos."
-        subtitle_html: "Seu projeto foi finalizado em %{expires} e está aguardando confirmação de boletos e pagamentos. Devido à data de vencimento de boletos, projetos que tiveram apoios de última hora ficam por até 4 dias úteis nesse status, contados a partir da data de finalização do projeto. %{link}."
-        header: "A partir daqui o seu projeto pode bater a meta ou não. Veja o que acontece em cada um dos casos:"
-        success: "Bati a meta:"
-        failed: "Não bati a meta:"
-        good_luck: "Boa sorte!"
+        title: "%{name} , we are processing the final payments ."
+        subtitle_html: His campaign was completed in %{expires} and is awaiting confirmation
+          slips and payments.
+        header: From here your campaign can hit the target or not.
+        success: 'A meta a :'
+        failed: 'Do not hit the target :'
+        good_luck: Good luck!
       successful:
-        title: "%{name}, comemore que você merece!"
-        subtitle_html: "Seu projeto foi bem sucedido e agora é a hora de iniciar o trabalho de relacionamento com seus apoiadores! Atenção especial à entrega de recompensas. Prometeu? Entregue! Não deixe de olhar a seção de pós-projeto do %{link1} e de informar-se sobre %{link2}. "
-        header1: "E não se esqueça: transparência é tudo."
-        transparent_html: "Manter um apoiador informado é manter um apoiador feliz. Mesmo que você vá informá-lo de uma falha ou contratempo. Apoiadores felizes são %{link} . Portanto, use e abuse (sempre com moderação) da aba novidades. O que você escrever por lá chega direto na caixa de emails dos seus apoiadores. Já vai começar a entrega de recompensas? Na aba \"relatórios\" você baixa informações para que você possa fazer a gestão de entrega de recompensas do seu projeto."
-        header2: "Não deixe de ler:"
+        title: "%{name} , celebrate you deserve!"
+        subtitle_html: His campaign was successful and now is the time to start working
+          relationship with their supporters !
+        header1: 'And do not forget : Transparency is everything.'
+        transparent_html: Keep informed supporter is to maintain a happy supporter
+          .
+        header2: 'Be sure to read :'
       rejected:
-        title: "%{name}, infelizmente não foi dessa vez."
-        subtitle_html: "Você enviou seu projeto para análise do Catarse e entendemos que ele não está de acordo com o perfil do site. Ter um projeto recusado não impede que você envie novos projetos para avaliação ou reformule seu projeto atual. Converse com nosso atendimento! Recomendamos que você dê uma boa olhada nos %{link1}  e no %{link2}."
+        title: "%{name} unfortunately was not this time ."
+        subtitle_html: You sent your campaign for analysis of ProduceRun and we understand
+          that it is not according to the site profile .
       online:
-        title: "%{name}, sua campanha está no ar!"
-        subtitle_html: "Seu projeto está no ar e sua campanha se encerrará às 23hs59min59s do dia %{date}. Até esse dia e horário você poderá receber apoios. Lembre-se, é tudo-ou-nada e você só levará os recursos captados se bater a meta que foi estipulada. Acesse a nossa %{link2} para outras dúvidas!"
-        explanation_html: "
-<div class='fontsize-base u-marginbottom-40 card card-terciary'>
-                      <p class='fontweight-bold'>
-                        Com o projeto no ar, algumas informações não podem mais ser editadas
-                      </p>
-                      <p>
-                        Você não poderá mais alterar:<br> - a sua meta de captação;<br> - o prazo final;<br> - a URL do projeto;<br> - o usuário dono do projeto.
-                      </p>
-                      <p class='fontweight-bold'>
-                        Precisa de mais informações sobre processos de campanha? Veja o box ao lado.
-                      </p>
-                      <p>
-                        A pequisa&nbsp;%{link1} também é ótima fonte de dados sobre o cenário brasileiro. Uma boa lida no&nbsp; %{link2} pode ser inspiradora. Lá você encontra histórias de projetos bem sucedidos e dicas de campanha.
-                      </p>
-                    </div>
-"
+        title: "%{name} , your campaign is in the air !"
+        subtitle_html: Your campaign is in the air and your campaign will end on the
+          day 23hs59min59s %{date}. Until that day and time you may receive support.
+        explanation_html: "<div class='fontsize-base u-marginbottom-40 card card-terciary'>
+          22266988645918961 With the project in the air, some information may no longer
+          be edited 6442732454340981 6221264374851357 You can no longer change : 36714498411431307
+          - your target capture ; 5917355537669011 - the deadline ; 4217621477946343
+          - the URL of the project; <br> - the user owner"
       failed:
-        title: "%{name}, não desanime!"
-        subtitle_html: "Seu projeto não bateu a meta e sabemos que isso não é a melhor das sensações. Mas não desanime. Encare o processo como um aprendizado e não deixe de cogitar uma segunda tentativa. Não se preocupe, todos os seus apoiadores receberão o dinheiro de volta. %{link}."
-        questions: "Enviamos também um email para você com duas perguntinhas. Se você tiver tempo e cabeça, seria ótimo se pudesse dar uma olhada. Seu feedback nos ajuda a construir um Catarse melhor e mais legal pra você."
+        title: "%{name} , do not be discouraged !"
+        subtitle_html: Your campaign does not hit the target and we know that this
+          is not the best of feelings .
+        questions: We also send an email to you with two short questions .
       draft:
-        title: "%{name}, construa seu projeto!"
-        subtitle: "Quanto mais cuidadoso e bem formatado for um projeto, maiores as chances de ele ser bem sucedido na sua campanha de captação. Antes de enviar seu projeto para a nossa análise, preencha todas as abas acima com carinho. Você pode salvar as alterações e voltar ao rascunho de projeto quantas vezes quiser. Quando tudo estiver pronto, clique no botão ENVIAR e entraremos em contato para avaliar o seu projeto."
-        study_title: "Sentiu que precisa estudar mais para montar seu projeto? Confira os links no box ao lado."
+        title: "%{name} , build your campaign !"
+        subtitle: The more careful and well formatted for a campaign , the greater
+          the chances of it being successful in your fundraising campaign.
+        study_title: Felt need to study more to build your campaign?
       approved:
-        title: "%{name}, seu projeto foi aprovado!"
-        subtitle_html: "Para colocar o seu projeto no ar é preciso apenas que você preencha os dados necessários na aba %{link1}. É importante saber que cobramos a taxa de 13% do valor total arrecadado apenas por projetos bem sucedidos. Entenda %{link2}. "
+        title: "%{name} , your campaign has been approved!"
+        subtitle_html: To place your campaign in the air is only requires you to fill
+          in the required data in tab %{link1}. is important to know that we charge
+          the rate of 13% of the total amount collected only for successful projects
+          .
       in_analysis:
-        title: "%{name}, você enviou seu projeto para análise e receberá nossa resposta em até 4 dias úteis"
-        subtitle_html: "Muito obrigado! Nossa equipe vai avaliar todo o conteúdo do seu projeto e em até 4 dias úteis você receberá um email informando se ele foi Aprovado, Recusado ou se vai continuar Em Análise por mais algum tempo para que você possa realizar ajustes sugeridos. Aproveite esse período para coletar feedbacks com pessoas próximas!"
+        title: "%{name} , you sent your campaign for analysis and receive our response
+          within 4 working days"
+        subtitle_html: Thank you very much!
     edit:
-      leave_link_html: "&nbsp; Sair do painel de controle"
-      start_tab: Início
-      basics_tab: Básico
-      project_tab: Projeto
-      posts_tab: Novidades
-      rewards_tab: Recompensas
-      about_you_tab: Sobre você
-      reports_tab: Relatórios
-      account_tab: Conta
+      leave_link_html: ''
+      start_tab: Begin
+      basics_tab: basic
+      project_tab: campaign
+      posts_tab: news
+      rewards_tab: price options
+      about_you_tab: about you
+      reports_tab: reports
+      account_tab: account
       preview_tab: Preview
-      send: Enviar
-      publish: Publicar
+      send: send
+      publish: publish
     dashboard_user_about:
-      submit: "Salvar"
-      title: "Fale mais sobre você!"
-      subtitle: "Apoiadores querem conhecer melhor os realizadores de projetos. Links que ajudam a contar sua história são sempre bem vindos. "
-      twitter_label: "Perfil do twitter"
-      twitter_hint: "Cole o link do seu perfil"
-      other_link_label: "Presença na internet"
-      other_link_hint: "Inclua links que ajudem os apoiadores a entender porque você é a pessoa certa para fazer esse projeto. "
-      about_label: "Sobre você"
-      about_hint: "Utilize esse espaço caso você queira descrever melhor você, sua empresa ou sua instituição. Quer dar crédito a parceiros? Utilizar algum vídeo institucional? Esse espaço é seu e utilize-o da forma que quiser.  Todas essas informações vão aparecer na Aba Sobre em seu Perfil Público."
-      facebook_link_label: "Perfil do facebook"
-      facebook_link_hint: "Cole o link do seu perfil"
-      uploaded_image_label: "Imagem do perfil"
-      uploaded_image_hint: "Essa imagem será utilizada como a miniatura de seu perfil (PNG, JPG tamanho ideal 280 x 280)"
-      name_label: "Nome"
-      name_hint: "Seu nome público, visível para todos como autor do projeto."
+      submit: save
+      title: Tell us more about you!
+      subtitle: Supporters want to learn more about the campaign directors.
+      twitter_label: Twitter profile
+      twitter_hint: Paste the link to your profile
+      other_link_label: Presence on the Internet
+      other_link_hint: Include links to help supporters to understand why you are
+        the right person to do this project .
+      about_label: about you
+      about_hint: Use this space if you want to better describe you, your company
+        or your institution .
+      facebook_link_label: Facebook profile
+      facebook_link_hint: Paste the link to your profile
+      uploaded_image_label: Profile image
+      uploaded_image_hint: This image will be used as the thumbnail of your profile
+        ( PNG, JPG ideal size 280 x 280 )
+      name_label: name
+      name_hint: Your public name , visible to all as a campaign of the author .
     dashboard_reward:
-      title: "Crie e edite aqui suas recompensas"
-      add_reward: "Adicionar recompensa"
-      subtitle: "Essa é sua demonstração de gratidão com os apoiadores. Lembre-se de incluir os custos das recompensas no seu orçamento. Prometeu, ENTREGUE! "
-      reward: "Recompensa"
+      title: Create and edit your pricing here
+      add_reward: Add price option
+      subtitle: Show what you get for each pricing option.
+      reward: Price option
     dashboard_preview:
-      header_subtitle: "É hora dos feedbacks!"
-      header_text: "Compartilhe o link abaixo com seus amigos e aproveite o momento para fazer ajustes finos que ajudem na sua campanha."
+      header_subtitle: It's time for feedback !
+      header_text: Share the link below with your friends and enjoy the moment to
+        make fine adjustments to help in your campaign.
     dashboard_posts:
-      title: "Escrever uma novidade"
-      only_to_backers: "Quero que essa novidade seja visível apenas para apoiadores."
-      publish: 'Publicar novidade'
-      discard: 'Descartar'
-      warning: "Toda novidade publicada é enviada diretamente aos seus apoiadores por email. Revise bem o post antes de publicar."
-      old_posts: "Novidades antigas"
+      title: Write a novelty
+      only_to_backers: I want this novelty is only visible to supporters.
+      publish: post new
+      discard: discard
+      warning: All published news is sent directly to their supporters by email.
+      old_posts: old news
     dashboard_project:
-      budgets_hint_html: "Informe uma lista com os principais itens do orçamento. Não precisa entrar em detalhes minuciosos, basta uma visão geral. Seus apoiadores gostarão de saber onde o dinheiro deles estará indo. Não existe uma regra&nbsp;quanto a quantidade de itens na lista, mas normalmente 5 costuma ser um bom número!"
-      budget_hint_html: "Como o seu dinheiro será utilizado? Quanto mais transparência melhor. Mostre que etapas e processos estarão envolvidos no uso desses recursos. Uma lista com os principais itens do orçamento ou até mesmo um gráfico de pizza vão super bem aqui."
-      budget_label: "Orçamento do projeto"
-      budgets_label: "Detalhe do orçamento"
-      start: "Conte a história do seu projeto!"
-      start_subtitle: "Pense bem na narrativa do projeto. É ela quem encantará as pessoas e trará apoiadores. Um bom video e descrição são diferenciais!"
-      video_url: "URL do vídeo"
-      video_url_hint: "Link do seu vídeo no Vimeo ou Youtube."
-      about: "Descrição do projeto"
-      links_title: "Links úteis"
-      about_hint_html: 'Fale com paixão e clareza sobre o que será realizado. Esclareça possíveis dúvidas sobre como o dinheiro será utilizado, quem está por trás do projeto, como e quando o projeto será entregue. Transparência atrai mais apoiadores. Lembre-se: seu projeto será acessado por pessoas comuns que decidirão se querem ou não apoiar seu projeto. Capriche! '
-      card: 'Card do projeto'
-      card_subtitle: 'Sabe aquele cardzinho de projeto que aparece na home e na busca? Então, faz bonito aqui nessa parte pois dizem que a primeira impressão é a que fica!'
-      image: 'Imagem do projeto'
-      image_hint: 'Essa imagem será utilizada como a miniatura de seu projeto (PNG, JPG tamanho 600 x 340)'
-      headline: 'Chamada do Projeto'
-      headline_hint: 'Será utilizada no card do projeto, junto com a imagem acima (miniatura). No máximo 100 caracteres.'
-      submit: 'Salvar'
+      budgets_hint_html: Enter a list of the main items of the budget.
+      budget_hint_html: How your funds are used?
+      budget_label: Project budget
+      budgets_label: Details of the budget
+      start: Tell the story of your campaign !
+      start_subtitle: Think in the campaign narrative.
+      video_url: Video URL
+      video_url_hint: Link your video on Vimeo or Youtube .
+      about: Project Description
+      links_title: useful links
+      about_hint_html: Contact with passion and clarity about what will be done .
+      card: Card design
+      card_subtitle: You know that campaign cardzinho that appears on the home and
+        search ?
+      image: Design Image
+      image_hint: This image will be used as the thumbnail of your campaign ( PNG,
+        JPG size 600 x 340 )
+      headline: Project call
+      headline_hint: Will be used in the campaign card , along with the above picture
+        ( thumbnail) .
+      submit: save
     dashboard_basics:
-      project_start: 'Preencha as informações abaixo'
-      project_start_subtitle: 'Os dados informados nessa seção não poderão ser modificados quando o projeto for ao ar. Preencha com atenção e revise antes de lançar o projeto. '
-      online_date: 'Data de entrada no ar'
-      user_id: 'Id do usuário'
-      name: 'Nome do projeto'
-      name_label: 'Quanto mais direto melhor. Não ultrapasse 50 caracteres'
-      url: 'URL do projeto'
-      url_label: 'É o endereço do seu projeto, deve ser fácil de memorizar. Evite underline, hífen e símbolos'
-      category: 'Categoria'
-      category_label: 'Explore e se inspire em outros projetos da mesma categoria que o seu.'
-      online_days: 'Prazo para arrecadação'
-      online_days_label: 'Você pode escolher entre 1 e 60 dias para a sua campanha. Confira o guia dos realizadores para dicas sobre prazos.'
-      value: 'Valor a ser arrecadado'
-      value_secondary: 'Planeje uma meta coerente com o que seu projeto propõe. Revise seu orçamento e não esqueça de incluir a taxa de 13% cobrada pelo Catarse caso seu projeto seja bem-sucedido'
+      project_start: Fill out the information below
+      project_start_subtitle: The data reported in this section may not be modified
+        when the project goes live .
+      online_date: Data entry no ar
+      user_id: User ID
+      name: Project Name
+      name_label: The more direct the better.
+      url: URL design
+      url_label: It is the address of your campaign should be easy to remember .
+      category: category
+      category_label: Explore and inspire other campaigns in the same category as yours.
+      online_days: Deadline for collection
+      online_days_label: You can choose between 1 and 60 days for your campaign .
+      value: Amount to be raised
+      value_secondary: Plan a consistent goal with your campaign proposes .
       form:
-        submit: 'Salvar'
+        submit: save

@@ -1,21 +1,21 @@
+---
 hu:
   layouts:
     header:
       blog: Blog
       discover: Explore
       faq: FAQ
-      help: Ajuda
-      profile: Meus dados
-      projects: Meus projetos
+      help: help
+      profile: my data
+      projects: my Projects
       signin: Login
-      signup: Cadastre-se
-      submit: Comece seu projeto
-      search: Busque projetos
+      signup: Register
+      submit: Start your campaign
+      search: Search campaigns
     login:
-      login_with_facebook: entre com sua conta do facebook
+      login_with_facebook: Login with your facebook account
     user:
-      my_contributions: Meus apoios
-      logout: Sair
-      my_credits: Saldo de créditos
-      refund_link: Solicitar reembolso
-
+      my_contributions: my support
+      logout: Sign Out
+      my_credits: Credit balance
+      refund_link: refund request

@@ -1,31 +1,28 @@
+---
 hu:
   projects:
     new:
-      page-title: "Comece seu projeto"
-
+      page-title: Start your campaign
       faq:
         titles:
-          support: "Suporte"
-          know_more: "Saiba mais"
-
+          support: holder
+          know_more: Learn more
         links:
-          criteria: "Critérios de seleção"
-          suport_central: "Central de suporte"
-          support_contact: "Entre em contato com a gente"
-          how_it_works: "Como o Catarse funciona?"
-          money: "Como receberei o dinheiro?"
-          selection: "Como os projetos são selecionados?"
-          all_or_nothing: "Por que Tudo ou Nada?"
-
+          criteria: Selection Criteria
+          suport_central: Support Center
+          support_contact: Contact us
+          how_it_works: As the ProduceRun work?
+          money: How will I get the money ?
+          selection: How are campaigns selected ?
+          all_or_nothing: Why All or Nothing ?
       form:
         blocks:
           first:
-            title: "Bem Vindo!"
-            description: "Preencha as informações abaixo para iniciar o rascunho do seu projeto."
-
+            title: You Welcome!
+            description: Complete the information below to start the draft of your
+              project.
         info:
           permalink: http://catarse.me/
-          goal: R$
-          online_days: dias
-
-        submit: "Salvar e continuar"
+          goal: "$"
+          online_days: days
+        submit: Save and Continue

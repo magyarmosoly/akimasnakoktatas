@@ -1,9 +1,10 @@
+---
 hu:
   projects:
     index_header:
-      subtitle: Financie projetos de maneira colaborativa e torne-se parte de algo
-        maior. Promova uma catarse coletiva! Você é a peça que falta nesta história.
-      title: Faça acontecer os projetos em que você acredita
+      subtitle: Finance campaigns collaboratively and become part of something bigger
+        .
+      title: Make it happen in the campaigns that you believe
     index:
       title: 'Aki másnak oktatás'
       back_a_project: 'Támogass egy osztályt'
@@ -16,36 +17,35 @@ hu:
       recommended: 'Ajánlott'
       banner_subtitle: 'Tanároknak szükségük van eszközökre a tanításhoz. Nézz körül, válassz egy projektet, segíts másnak tanulni.'
       box:
-        by: por
-        when: em
-      banner: "Conheça a pesquisa"
-      explore: "Explore projetos"
+        by: kinek
+        when: mikor
+      banner: Check out the search
+      explore: Explore campaigns
       links:
-        channels: "Descubra o Canal Asas"
-        recommended: "Descubra projetos recomendados"
-        expiring: "Descubra projetos na reta final"
-        recents: "Descubra projetos recentes"
-        near: "Descubra projetos perto de você"
+        channels: Discover the Canal Wings
+        recommended: Discover campaigns recommended
+        expiring: Discover campaigns down the stretch
+        recents: Discover recent campaigns
+        near: Discover campaigns near you
       sidebar:
         titles:
           blog: blog
-          facebook: "já curtiu nosso face?"
-          newsletter: "Assine nossa news"
-          faq: "tá com dúvida?"
+          facebook: already likes our face ?
+          newsletter: Subscribe to our news
+          faq: "'re in doubt ?"
           schedule: agenda
         placeholders:
-          email: "Digite seu email"
+          email: Enter your email address
         buttons:
-          newsletter: Enviar
+          newsletter: send
       sections:
         near:
-          title: 'Próximos a mim'
+          title: Near Me
         recommended:
-          title: 'Recomendados'
+          title: recommended
         expiring:
-          title: "Na reta final"
+          title: In the final stretch
         recents:
-          title: "Recentes"
+          title: recent
         channels:
-          title: 'Canal Asas'
-
+          title: Basic Canal

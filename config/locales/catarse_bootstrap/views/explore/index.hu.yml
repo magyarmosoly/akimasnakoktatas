@@ -1,21 +1,22 @@
+---
 hu:
   explore:
     index:
-      success_follow: "Agora você segue a categoria e vai receber semanalmente uma lista com os novos projetos de %{name}"
-      success_unfollow: "Você deixou de seguir essa categoria %{name}"
-      follow: Seguir
-      unfollow: Deixar de seguir
-      following: seguidores
-      categories: Categorias
-      expiring: Na reta final
-      in_funding: No ar
-      near: Próximos a mim
-      quick_explore: Busca rápida
-      recent: Recentes
-      recommended: Recomendados
-      subtitle: Explore os projetos, encontre aqueles que mexem com seu coração, e
-        faça acontecer!
-      successful: Bem-sucedidos
-      title: Encontre projetos incríveis
-    title: Explore os projetos
-
+      success_follow: Now you follow the category and will receive weekly a list of
+        new projects %{name}
+      success_unfollow: You failed to follow this category %{name}
+      follow: follow
+      unfollow: Unfollow
+      following: followers
+      categories: Categories
+      expiring: In the final stretch
+      in_funding: from to
+      near: Near Me
+      quick_explore: qUICK SEARCH
+      recent: recent
+      recommended: recommended
+      subtitle: Explore the campaigns , find those that touch your heart and make it
+        happen !
+      successful: Successful
+      title: Find amazing campaigns
+    title: Explore the campaigns

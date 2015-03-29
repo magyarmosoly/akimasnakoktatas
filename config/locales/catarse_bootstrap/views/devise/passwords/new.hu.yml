@@ -1,16 +1,17 @@
+---
 hu:
   devise:
     passwords:
       new:
-        no_account_html: "Não tem conta?"
+        no_account_html: No account ?
         titles:
-          site: 'Redefinir senha'
-          header: 'Redefinir senha'
+          site: Reset password
+          header: Reset password
         links:
-          register: "Cadastre-se"
+          register: Register
         form:
           labels:
-            email: 'Após inserir seu email, iremos enviar uma notificação com instruções de como redefinir sua senha'
+            email: After entering your email address , we will send a notification
+              with instructions on how to reset your password
           inputs:
-            submit: 'Redefinir'
-
+            submit: Reset password

@@ -1,96 +1,103 @@
+---
 hu:
   projects:
     metrics:
       titles:
-        confirmed_by_day: 'Total de apoios confirmados por dia'
-        confirmed_amount_by_day: 'Total arrecadado por dia'
-        address_state: 'Total de apoios confirmados por Estado'
+        confirmed_by_day: Total daily confirmed support
+        confirmed_amount_by_day: Total contributions per day
+        address_state: Total support confirmed by State
     reminder:
-      ok: 'Ok! Vamos te mandar um lembrete por e-mail 48 horas antes do fim da campanha'
-      active_btn: 'Lembre-me deste projeto'
-      deactive_btn: 'Não quero mais ser lembrado'
-    send_to_analysis: Seu projeto foi enviado para nossa equipe.
-    send_to_analysis_error: Erro ao enviar projeto para análise. Preencha todos os campos obrigatórios.
-    push_to_online: Seu projeto está online!
-    push_to_online_error: Erro ao colocar o projeto online. Preencha todos os campos obrigatórios.
+      ok: Ok!
+      active_btn: Remember me this campaign
+      deactive_btn: Do not want to be remembered
+    send_to_analysis: Your campaign has been sent to our team.
+    send_to_analysis_error: Error sending campaign for analysis.
+    push_to_online: Your campaign is online!
+    push_to_online_error: Error while placing the online campaign.
     twitter:
-      take_a_look: Confira o projeto %{name} no @catarse
+      take_a_look: Check out the campaign %{name} in catarse
     video_embed:
-      a_project_by_html: Um projeto de %{link} no
+      a_project_by_html: A %{link} campaign in
     posts:
       project_post:
-        unavailable: Esta novidade só está disponível para apoiadores.
-        contribute: Apoie
-        unavailable_contribute: este projeto para visualizá-la.
-        destroy: Remover Novidade
-        destroy_confirmation: Deseja remover esta novidade?
+        unavailable: This novelty is only available to supporters.
+        contribute: Support
+        unavailable_contribute: this campaign to view it .
+        destroy: Remove Novelty
+        destroy_confirmation: Do you want to remove this news?
       new:
-        notice: Novidade enviada com sucesso!
-        comment: Texto da sua Novidade
-        exclusive: Visível apenas para apoiadores
-        submit: Enviar Novidade
-        title: Título da sua Novidade
-        warning: Lembrando que todo post de novidade vai diretamente para o email de
-          seus apoiadores. Por isso, revise bem seu texto antes de enviá-lo.
+        notice: Successfully sent New!
+        comment: Text of your Novelty
+        exclusive: Visible only to supporters
+        submit: Send Novelty
+        title: Summary of Your New
+        warning: Recalling that all post new goes directly to the email of his supporters
+          .
     project_reports:
-      all_contributions_without_reward: Baixar relatório de todos os apoiadores
-        que não selecionaram uma recompensa
-      link_reports_confirmed: Baixar relatório de todos os apoiadores confirmados
-      link_reports_waiting_confirmation: Baixar relatório de todos os apoiadores
-        com boleto impresso
-      link_reward: Baixar relatório dos apoiadores da recompensa de %{value}
+      all_contributions_without_reward: Download report of all supporters who did
+        not select a reward
+      link_reports_confirmed: Download report all confirmed supporters
+      link_reports_waiting_confirmation: Download report of all supporters with printed
+        ticket
+      link_reward: Download report of %{value} reward supporters
     project_about:
-      embed: < embed >
-      embed_title: Incorpore este projeto no seu site
-      active_btn: ' Lembrar-me'
-      deactive_btn: ' Lembrete ativo'
+      embed: "< embed >"
+      embed_title: Embed this campaign on your site
+      active_btn: Remember me
+      deactive_btn: active reminder
     show:
       menu:
-        panel_html: "&nbsp;&nbsp;Painel de controle"
-        about: Sobre
-        add_reward: Adicionar recompensa
-        comments: Comentários
-        contributions: Apoios
-        metrics: Métricas
-        edit: Edição
-        reports: Relatórios
-        posts: Novidades
+        panel_html: ''
+        about: about
+        add_reward: Add reward
+        comments: reviews
+        contributions: supports
+        metrics: metrics
+        edit: edition
+        reports: reports
+        posts: news
     project_main:
-      share: "Compartilhe"
-      tweet: "Tweet"
+      twitter_profile: Profile no Twitter
+      facebook_profile: Profile no Facebook
+      author_website: Site
+      share: Share It
+      tweet: Tweet
+      contact_author: Send Message
       contribute_project:
         display_status:
-          approved: "Esse projeto já foi aprovado pelo Catarse. Em breve ele entrará no ar e estará pronto para receber apoios."
-          reached_goal: "Este projeto será bem-sucedido e financiado em %{date}"
-          not_reached_goal: "Este projeto só será financiado se pelo menos %{goal} forem atingidos até %{date}"
-          failed: "Este projeto não atingiu o mínimo de %{goal} até %{date} e não foi financiado"
-          rejected: "Este projeto não foi aceito. Não é possível realizar um apoio."
-          in_analysis: "Este projeto está em análise e ainda não está aberto para receber apoios."
-          successful: "Este projeto foi bem-sucedido e foi financiado em %{date}"
-          waiting_funds: "Aguardando a confirmação de boletos para saber se este projeto será financiado."
-          draft: "Este projeto é apenas um rascunho e ainda não pode receber apoios."
-        submit: Apoiar este projeto
-      project_by: projeto por
-      funding_period: Período de campanha
+          reached_goal: This campaign will be successful and funded %{date}
+          not_reached_goal: This campaign will only be funded if at least %{goal} are
+            achieved by %{date}
+          failed: This campaign did not reach the minimum %{goal} %{date} up and was
+            not funded
+          rejected: This campaign was not accepted.
+          in_analysis: This campaign is under review and is not yet open to receive
+            support .
+          successful: This campaign was successful and was funded in %{date}
+          waiting_funds: Awaiting confirmation slips to know if this campaign will
+            be funded .
+          draft: This design is just a draft and still can not receive support .
+        submit: Support this campaign
+      project_by: design by
+      funding_period: Campaign period
       project_header:
-        subtitle_html: "Um projeto de %{link}"
-        without_city: "Um projeto de"
-        with_city: "Um projeto de %{category_name} por %{author} em %{city}"
+        subtitle_html: A %{link} campaign
+        without_city: A campaign
+        with_city: A %{category_name} %{author} campaign by in %{city}
       menu:
-        about: Sobre
-        add_reward: Adicionar recompensa
-        comments: Comentários
-        contributions: Apoios
-        metrics: Métricas
-        edit: Edição
-        reports: Relatórios
-        posts: Novidades
-      no_rewards_warning: Não viaje! Pense em como irá entregá-las e coloque tudo
-        isso no orçamento. Prometeu?! CUMPRA! :D
-      no_rewards_warning_title: Crie aqui suas recompensas
+        about: about
+        add_reward: Add reward
+        comments: reviews
+        contributions: supports
+        metrics: metrics
+        edit: edition
+        reports: reports
+        posts: news
+      no_rewards_warning: Do not travel !
+      no_rewards_warning_title: Create here your rewards
       contribution_states:
-        confirmed: "Confirmados"
-        pending: "Pendentes"
+        confirmed: confirmed
+        pending: printed slips
       sidebar:
-        contributions: apoios
-        goal: atingidos de %{total}
+        contributions: support
+        goal: attained %{total}

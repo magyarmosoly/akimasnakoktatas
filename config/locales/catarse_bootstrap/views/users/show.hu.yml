@@ -1,106 +1,118 @@
+---
 hu:
   users:
-    card:
-      twitter_profile: "Perfil no Twitter"
-      facebook_profile: "Perfil no Facebook"
-      author_website: "Site"
-      contact_author: "Enviar mensagem"
-    failed_reactivation: "O link para reativação é inválido, por favor entre em contato com a nossa equipe."
-    reactivated: "Seja bem vindo de volta, sua conta foi reativada."
+    failed_reactivation: The link reactivation is invalid , please contact our team.
+    reactivated: Welcome back , your account has been reactivated.
     project:
-      confirmed: "Confirmado"
-      refunded: "Reembolsado"
-      requested_refund: "Reembolso solicitado"
-      waiting_confirmation: "Aguardando confirmação"
-      tell_about_this_contribution: Conte para o mundo sobre o seu apoio!
+      confirmed: confirmed
+      refunded: refunded
+      requested_refund: requested reimbursement
+      waiting_confirmation: waiting for confirmation
+      tell_about_this_contribution: Tell the world about your support!
     credit_cards:
       index:
-        last_digits: 'Cartão'
-        brand: 'Operadora'
-        title: 'Cartões de credito'
-        remove: 'Remover'
+        last_digits: card
+        brand: operator
+        title: Credit cards
+        remove: remove
     credits:
       modal:
-        title: 'Quer mesmo solicitar o reembolso do seu apoio?'
-        text: "Saiba como funciona o processo de reembolso no Catarse:"
-        link: "Regras e Funcionamento dos reembolsos / estornos"
-        reject_btn: "Não, desejo manter meus créditos"
-        accept_btn: "Sim, desejo solicitar o reembolso do meu apoio"
+        title: You really want to request a refund of your support ?
+        text: 'Learn how the refund process ProduceRun:'
+        link: Rules and Operations of refunds / rebates
+        reject_btn: No, I want to keep my credits
+        accept_btn: Yes, I request a refund for my support
       index:
-        contribution_date: "Data do apoio"
-        current_credits_html: "Seu saldo atual é de <span id=\"current_credits\">%{credits}</span> em créditos."
-        important_html: "Para saber todas as regras de funcionamento de reembolso, <a href='http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos' target='_blank'>clique aqui</a>. Qualquer dúvida, acesse nosso <a href='http://suporte.catarse.me' target='_blank'>suporte</a>."
-        project: Projeto
-        refunded: "Solicitação confirmada. Entraremos em contato em até 4 dias uteís."
-        insufficient_credits: "Você não tem créditos suficientes para realizar este estorno."
-        refunds_title: "Apoios que podem ter estorno realizado"
-        request_refund: "Solicitar estorno"
-        requested_refund: "Solicitado estorno"
+        contribution_date: Support Date
+        current_credits_html: Your current balance is <span id="current_credits">%{credits}</span>
+          credits.
+        important_html: For all operating rules for reimbursement, <a href='http://suporte.catarse.me/hc/pt-br/articles/202365507-Regras-e-funcionamento-dos-reembolsos-estornos'
+          target='_blank'>clique aqui2958884982019787 .
+        project: campaign
+        refunded: Confirmed request.
+        insufficient_credits: You do not have enough credits to achieve this reversal
+          .
+        refunds_title: Support that may have made reversal
+        request_refund: request reversal
+        requested_refund: asked reversal
         status: Status
-        title: "Meus créditos"
-        value: Valor
+        title: my credits
+        value: value
       refund:
-        cannot_refund: "Este apoio não pode ser estornado."
-        error: "Oops. Ocorreu um erro ao solicitar seu estorno."
-        no_credits: "Você não possui créditos suficientes para realizar este estorno."
-        refunded: "Este apoio já foi estornado."
-        requested_refund: "Você já solicitou estorno para este apoio."
-      title: "Meus créditos"
+        cannot_refund: This support can not be reversed .
+        error: Oops .
+        no_credits: You do not have enough credits to achieve this reversal .
+        refunded: This support has been reversed.
+        requested_refund: Have you applied for this chargeback support.
+      title: my credits
     current_user_fields:
-      bank_account_title: "Dados bancários"
-      bank_account_hint: "Seus dados bancários serão utilizados para realizar o reembolso integral do seu apoio, caso o projeto não atinja 100% da meta estabelecida."
-      my_facebook: 'Integração com o facebook'
-      bio_limit: 'até 140 caracteres'
-      updated: "As suas informações foram atualizadas"
-      update_social_info: "Atualizar informações"
-      social_info: "Informações para contato"
-      twitter: "twitter ( usuário )"
-      facebook_link: "perfil do facebook (link completo)"
-      other_link: "link da sua página na internet"
-      change_password: "Alterar minha senha"
-      current_password_hint: "<i>Para que a senha seja alterada você precisa confirmar a sua senha atual.</i>"
-      email_hint: "Seu email será utilizado apenas para envio de comunicações do Catarse e dos projetos que você apoiar. Ele não estará visível em seu perfil. Quando você apoiar um projeto, nós daremos seu email para o dono do projeto para que ele possa providenciar as recompensas."
-      email_tooltip: "Clique aqui para preencher seu email..."
-      gravatar_hint_html: "Você também pode mudar a sua foto usando o %{link} com seu email. <br>É tão simples quanto enviar uma imagem e já funciona para outros sites também ;)"
-      local_avatar: "Meu avatar"
-      submit_text: "Escolha sua imagem"
-      submit: "Enviar"
-      my_data: "Meus dados"
-      newsletter: "Quero receber novidades do Catarse por email"
-      password_hint: "<i>Deixe em branco caso você não queira trocar sua senha.</i>"
-      deactivate: "Desativar a minha conta"
-      deactivate_notice: "A conta de %{name} foi desativada."
-      deactivate_confirm: "Você deseja desativar essa conta?"
-      deactivate_hint: "Todos os seus apoios serão convertidos em apoios anônimos, seus dados não serão mais visíveis, você sairá automaticamente do sistema e sua conta será desativada permanentemente."
+      bank_account_title: bank details
+      bank_account_hint: Your bank data will be used to perform a full refund of your
+        support , if the project does not reach 100 % of the target .
+      my_facebook: Integration with facebook
+      bio_limit: 140 characters
+      updated: Your information has been updated
+      update_social_info: Update information
+      social_info: Contact Information
+      twitter: twitter ( user)
+      facebook_link: Facebook profile ( full link )
+      other_link: link its website
+      change_password: Change my password
+      current_password_hint: "<i>Para the password is changed you need to confirm
+        your password atual.</i>"
+      email_hint: Your email is used only to send ProduceRun of communications and
+        projects you support .
+      email_tooltip: Click here to fill in your email ...
+      gravatar_hint_html: You can also change your photo using %{link} with your email.
+      local_avatar: my avatar
+      submit_text: Choose your image
+      submit: send
+      my_data: my data
+      newsletter: I want to receive news from ProduceRun by email
+      password_hint: "<i>Deixe blank if you do not want to change your senha.</i>"
+      deactivate: Disable my account
+      deactivate_notice: The %{name} account has been disabled.
+      deactivate_confirm: You want to disable this account ?
+      deactivate_hint: All your support will be converted into anonymous support ,
+        your data will not be visible , you will exit the system and your account
+        will be permanently disabled .
     unsubscribes:
-      projects_in_reminder: "Projetos com lembrete ativo:"
-      title: "Escolha de quais projetos você deseja receber notificações:"
-      posts: "Eu quero receber atualizações dos projetos"
+      projects_in_reminder: 'Projects with active reminder :'
+      title: 'Choosing which campaigns you want to receive notifications :'
+      posts: I want to receive updates of campaigns
     show:
       projects:
-        here: 'aqui'
-        no_projects: "%{name} ainda não realizou nenhum projeto no Catarse. Será que a inspiração vai bater uma hora dessas?"
-        no_projects_current_user_html: "Você ainda não realizou nenhum projeto no Catarse. Deixe a inspiração bater e clique %{link} para começar!"
-        title: "Projetos de %{name}"
-        title_current_user: "Meus projetos"
+        here: here
+        no_projects: "%{name} not yet any campaign on ProduceRun ."
+        no_projects_current_user_html: You have not started any campaign on ProduceRun
+          .
+        title: "%{name} campaigns"
+        title_current_user: my Projects
       contributions:
-        anonymous: "Apoio anônimo."
-        no_contributions: "%{name} ainda não apoiou nenhum projeto. Mas a gente sabe que é só questão de tempo! :D"
-        no_contributions_current_user_html: "Você ainda não apoiou nenhum projeto. Que tal <a href=\"/\">começar agora</a>?"
-        no_reward: "Você não selecionou nenhuma recompensa"
-        title: "Projetos que %{name} já apoiou"
-        title_current_user: "Projetos que já apoiei"
-        your_reward: "Sua recompensa"
-      attention: "Atenção"
+        anonymous: Anonymous support.
+        no_contributions: "%{name} not backed any campaign yet ."
+        no_contributions_current_user_html: You have not backed any campaign.
+        no_reward: You have not selected any reward
+        title: Projects that %{name} has supported
+        title_current_user: Projects already supported
+        your_reward: your reward
+      attention: Heads Up
       tabs:
-        credit_cards: 'Cartões de credito'
-        contributed_projects: "Projetos apoiados"
-        created_projects: "Projetos criados"
-        comments: Comentários
-        credits: Créditos
-        settings: Preferências
-        unsubscribes: Notificações
+        credit_cards: Credit cards
+        contributed_projects: supported campaigns
+        created_projects: campaigns created
+        comments: reviews
+        credits: credits
+        settings: preferences
+        unsubscribes: Notifications
       user_social:
-        email: "Me envie um email"
-        facebook: "Perfil no facebook"
-        twitter: "Perfil no twitter"
+        email: Send me an email
+        facebook: Profile no facebook
+        twitter: Profile no twitter
+    dashboard:
+      contributions:
+        support_now: Support now!
+        active_projects: Active projects
+        funded_projects: Projects funded
+        not_funded_projects: Projects not funded
+        no_contribuitions: You did not support any project yet with us...

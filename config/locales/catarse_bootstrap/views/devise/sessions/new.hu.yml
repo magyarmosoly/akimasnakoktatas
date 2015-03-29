@@ -1,20 +1,20 @@
+---
 hu:
   devise:
     sessions:
       new:
-        no_account_html: "Não tem conta?"
+        no_account_html: No account ?
         titles:
-          site: 'Login'
-          header: 'Login'
+          site: Login
+          header: Login
         links:
-          register: "Cadastre-se"
-          password: "Senha"
-          forgot_password: "Esqueci minha senha"
+          register: Register
+          password: password
+          forgot_password: I forgot my password
         form:
           labels:
-            remember_me: 'Permanecer conectado'
+            remember_me: Stay logged
           inputs:
-            submit: 'Fazer login'
-            password: 'Senha'
-            facebook: 'Entrar com Facebook'
-
+            submit: Log in
+            password: Password
+            facebook: Login with Facebook

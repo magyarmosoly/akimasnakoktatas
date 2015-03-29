@@ -1,18 +1,18 @@
+---
 hu:
-  found_singular: Encontrado
-  found_plural: Encontrados
-  project_singular: projeto
-  project_plural: projetos
-  contribution_singular: apoiador
-  contribution_plural: apoiadores
-  remaining_singular: restante
-  remaining_plural: restantes
-  created_project: 
-    zero: "ainda não criou projetos"
-    one: "%{count} projeto criado"
-    other: "%{count} projetos criados"
+  found_singular: found
+  found_plural: found
+  project_singular: campaign
+  project_plural: campaigns
+  contribution_singular: supporter
+  contribution_plural: supporters
+  remaining_singular: remainder
+  remaining_plural: remaining
+  created_project:
+    zero: has not created campaigns
+    one: "%{count} created campaign"
+    other: "%{count} campaigns created"
   contributed_project:
-    zero: "ainda não apoiou projetos"
-    one: "apoiou %{count} projeto"
-    other: "apoiou %{count} projetos"
-
+    zero: not yet supported campaigns
+    one: "%{count} supported campaign"
+    other: "%{count} supported campaigns"
