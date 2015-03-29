@@ -1,5 +1,5 @@
 hu:
   will_paginate:
-    next: "Próxima »"
+    next: "Következő »"
     page_gap: "..."
-    previous: "« Anterior"
+    previous: "« Előző"

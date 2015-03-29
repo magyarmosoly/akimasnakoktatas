@@ -1,178 +1,165 @@
 hu:
   date:
     abbr_day_names:
-      - Dom
-      - Seg
-      - Ter
-      - Qua
-      - Qui
-      - Sex
-      - Sáb
+      - V
+      - H
+      - K
+      - Sze
+      - Cs
+      - P
+      - Szo
     abbr_month_names:
       - ~
       - Jan
-      - Fev
+      - Feb
       - Mar
-      - Abr
-      - Mai
-      - Jun
-      - Jul
-      - Ago
-      - Set
-      - Out
+      - Apr
+      - Máj
+      - Jún
+      - Júl
+      - Aug
+      - Szept
+      - Oct
       - Nov
-      - Dez
+      - Dec
     day_names:
-      - Domingo
-      - Segunda
-      - Terça
-      - Quarta
-      - Quinta
-      - Sexta
-      - Sábado
+      - Vasárnap
+      - Hétfő
+      - Kedd
+      - Szerda
+      - Csütörtök
+      - Péntek
+      - Szombat
     formats:
-      default: "%d/%m/%Y"
-      with_time: "%d/%m/%Y às %Hh%Mmin"
-      long: "%d de %B de %Y"
-      short: "%d de %B"
+      default: "%Y %m %d"
+      with_time: "%Y %m %d %Hh:%M"
+      long: "%Y %B %d"
+      short: "%B %d"
     month_names:
       -
-      - Janeiro
-      - Fevereiro
-      - Março
-      - Abril
-      - Maio
-      - Junho
-      - Julho
-      - Agosto
-      - Setembro
-      - Outubro
-      - Novembro
-      - Dezembro
+      - Január
+      - Február
+      - Március
+      - Április
+      - Május
+      - Június
+      - Július
+      - Augusztus
+      - Szeptember
+      - Október
+      - November
+      - December
     order:
-      - :day
-      - :month
       - :year
+      - :month
+      - :day
   datetime:
     distance_in_words:
       about_x_hours:
-        one: "aproximadamente 1 hora"
-        other: "aproximadamente %{count} horas"
+        other: "kb. %{count} óra"
       about_x_months:
-        one: "aproximadamente 1 mês"
-        other: "aproximadamente %{count} meses"
+        other: "kb. %{count} hónap"
       about_x_years:
-        one: "aproximadamente 1 ano"
-        other: "aproximadamente %{count} anos"
+        other: "kb. %{count} év"
       almost_x_years:
-        one: "quase 1 ano"
-        other: "quase %{count} anos"
-      half_a_minute: "meio minuto"
+        other: "majdnem %{count} év"
+      half_a_minute: "fél perc"
       less_than_x_minutes:
-        one: "menos de um minuto"
-        other: "menos de %{count} minutos"
+        other: "kevesebb, mint %{count} perc"
       less_than_x_seconds:
-        one: "menos de 1 segundo"
-        other: "menos de %{count} segundos"
+        other: "kevesebb, mint %{count} másodperc"
       over_x_years:
-        one: "mais de 1 ano"
-        other: "mais de %{count} anos"
+        other: "több, mint %{count} év"
       x_days:
-        one: "1 dia"
-        other: "%{count} dias"
+        other: "%{count} nap"
       x_minutes:
-        one: "1 minuto"
-        other: "%{count} minutos"
+        other: "%{count} perc"
       x_months:
-        one: "1 mês"
-        other: "%{count} meses"
+        other: "%{count} hónap"
       x_seconds:
-        one: "1 segundo"
-        other: "%{count} segundos"
+        other: "%{count} másodperc"
     prompts:
-      day: Dia
-      hour: Hora
-      minute: Minuto
-      month: Mês
-      second: Segundo
-      year: Ano
+      day: Nap
+      hour: Óra
+      minute: Perc
+      month: Hónap
+      second: Másodperc
+      year: Év
   errors: &errors
-    format: "%{attribute} %{message}"
+    format: '%{attribute} %{message}'
     messages:
-      accepted: "deve ser aceito"
-      blank: "não pode ficar em branco"
-      confirmation: "A senha e a confirmação de senha preenchidas não estão iguais"
-      empty: "não pode ficar vazio"
-      equal_to: "deve ser igual a %{count}"
-      even: "deve ser par"
-      exclusion: "não está disponível"
-      greater_than: "deve ser maior que %{count}"
-      greater_than_or_equal_to: "deve ser maior ou igual a %{count}"
-      inclusion: "não está incluído na lista"
-      invalid: "não é válido"
-      less_than: "deve ser menor que %{count}"
-      less_than_or_equal_to: "deve ser menor ou igual a %{count}"
-      not_a_number: "aceita somente números"
-      not_an_integer: "não é um número inteiro"
-      odd: "deve ser ímpar"
-      record_invalid: "A validação falhou: %{errors}"
-      taken: "já está em uso"
-      too_long: "é muito longo (máximo: %{count} caracteres)"
-      too_short: "é muito curto (mínimo: %{count} caracteres)"
-      wrong_length: "não possui o tamanho esperado (%{count} caracteres)"
+      accepted: must be accepted
+      blank: can't be blank
+      confirmation: doesn't match confirmation
+      empty: can't be empty
+      equal_to: must be equal to %{count}
+      even: must be even
+      exclusion: is reserved
+      greater_than: must be greater than %{count}
+      greater_than_or_equal_to: must be greater than or equal to %{count}
+      inclusion: is not included in the list
+      invalid: is invalid
+      less_than: must be less than %{count}
+      less_than_or_equal_to: must be less than or equal to %{count}
+      not_a_number: is not a number
+      not_an_integer: must be an integer
+      odd: must be odd
+      record_invalid: 'Validation failed: %{errors}'
+      taken: has already been taken
+      too_long:
+        one: is too long (maximum is 1 character)
+        other: is too long (maximum is %{count} characters)
+      too_short:
+        one: is too short (minimum is 1 character)
+        other: is too short (minimum is %{count} characters)
+      wrong_length:
+        one: is the wrong length (should be 1 character)
+        other: is the wrong length (should be %{count} characters)
     template:
-      body: "Por favor, verifique o(s) seguinte(s) campo(s):"
+      body: 'There were problems with the following fields:'
       header:
-        one: "Não foi possível gravar %{model}: 1 erro"
-        other: "Não foi possível gravar %{model}: %{count} erros."
+        one: 1 error prohibited this %{model} from being saved
+        other: '%{count} errors prohibited this %{model} from being saved'
   helpers:
     select:
-      promhu: "Por favor selecione"
+      prompt: Please select
     submit:
-      create: "Criar %{model}"
-      submit: "Salvar %{model}"
-      update: "Atualizar %{model}"
+      create: Create %{model}
+      submit: Save %{model}
+      update: Update %{model}
   number:
     currency:
       format:
-        delimiter: "."
-        format: "%u %n"
+        delimiter: ! ','
+        format: ! '%u%n'
         precision: 0
-        separator: ","
+        separator: .
         significant: false
         strip_insignificant_zeros: false
         unit: R$
     format:
-      delimiter: "."
-      precision: 2
-      separator: ","
+      delimiter: ! ','
+      precision: 3
+      separator: .
       significant: false
       strip_insignificant_zeros: false
     human:
       decimal_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
-          billion:
-            one: bilhão
-            other: bilhões
-          million:
-            one: milhão
-            other: milhões
-          quadrillion:
-            one: quatrilhão
-            other: quatrilhões
-          thousand: mil
-          trillion:
-            one: trilhão
-            other: trilhões
-          unit: ~
+          billion: Billion
+          million: Million
+          quadrillion: Quadrillion
+          thousand: Thousand
+          trillion: Trillion
+          unit: ''
       format:
-        delimiter: "."
-        precision: 2
+        delimiter: ''
+        precision: 3
         significant: true
         strip_insignificant_zeros: true
       storage_units:
-        format: "%n %u"
+        format: ! '%n %u'
         units:
           byte:
             one: Byte
@@ -183,23 +170,22 @@ hu:
           tb: TB
     percentage:
       format:
-        delimiter: "."
+        delimiter: ''
     precision:
       format:
-        delimiter: "."
+        delimiter: ''
   support:
     array:
-      last_word_connector: " e "
-      two_words_connector: " e "
-      words_connector: ", "
+      last_word_connector: ! ', and '
+      two_words_connector: ! ' and '
+      words_connector: ! ', '
   time:
     am: am
     formats:
       estimate: "%B/%Y"
-      simple: "%d/%m/%Y, %H:%M h"
-      default: "%A, %d de %B de %Y, %H:%M h"
-      long: "%A, %d de %B de %Y, %H:%M h"
-      short: "%d/%m, %H:%M h"
+      default: ! '%a, %d %b %Y %H:%M:%S %z'
+      long: ! '%B %d, %Y %H:%M'
+      short: ! '%d %b %H:%M'
       posts: "%d %b %Y"
     pm: pm
   # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
@@ -209,3 +195,4 @@ hu:
   activerecord:
     errors:
       <<: *errors
+
