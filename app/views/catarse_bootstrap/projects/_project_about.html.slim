@@ -13,10 +13,10 @@
     - if @project.online?
       - if user_signed_in? && @project.user_already_in_reminder?(current_user.id)
         .fontsize-small
-          = link_to t('.deactive_btn'), reminder_project_path(@project), class: 'fa fa-clock-o link-hidden-success u-right', method: :delete, id: 'reminder'
+          = link_to t('.deactive_btn'), reminder_project_path(@project), class: 'fa fa-clock-o link-hidden-success u-right', method: :delete
       - else
         .fontsize-small
-          = link_to t('.active_btn'), reminder_project_path(@project), class: 'fa fa-clock-o link-hidden u-right fontcolor-secondary', id: 'reminder'
+          = link_to t('.active_btn'), reminder_project_path(@project), class: 'fa fa-clock-o link-hidden u-right fontcolor-secondary'
 
 #project_embed.w-hidden data-path=embed_panel_project_path(@project)
 
@@ -25,4 +25,10 @@
   .no-mobile
     .fontsize-base
       = @project.about_html.try(:html_safe)
-      = render 'budget'
+      - if @project.budget.present?
+        p.fontsize-large.fontweight-semibold
+          | Célösszeg
+        p.fontsize-base
+          = @project.budget.try(:html_safe)
+        /- if @project.budgets.present?
+          = pie_chart @project.budgets.pluck(:name, :value)

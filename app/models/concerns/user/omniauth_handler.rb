@@ -9,7 +9,7 @@ module User::OmniauthHandler
         {
           name: hash['info']['name'],
           email: hash['info']['email'],
-          about_html: (hash["info"]["description"][0..139] rescue nil),
+          about: (hash["info"]["description"][0..139] rescue nil),
           locale: I18n.locale.to_s
         }
       ) do |user|

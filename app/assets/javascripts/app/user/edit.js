@@ -6,7 +6,8 @@ App.addChild('UserEdit', _.extend({
   },
 
   activate: function(){
-    
+    var that = this;
+
     this.route('contributions');
     this.route('projects');
     this.route('about_me');

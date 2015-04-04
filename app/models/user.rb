@@ -14,15 +14,15 @@ class User < ActiveRecord::Base
 
   # FIXME: Please bitch...
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :permalink,
-    :image_url, :uploaded_image, :newsletter, :address_street, :address_number,
+    :image_url, :uploaded_image, :bio, :newsletter, :full_name, :address_street, :address_number,
     :address_complement, :address_neighbourhood, :address_city, :address_state, :address_zip_code, :phone_number,
     :cpf, :state_inscription, :locale, :twitter, :facebook_link, :other_link, :moip_login, :deactivated_at, :reactivate_token,
-    :bank_account_attributes, :country_id, :zero_credits, :links_attributes, :about_html, :cover_image, :category_followers_attributes, :category_follower_ids,
-    :subscribed_to_project_posts
+    :bank_account_attributes, :country_id, :zero_credits, :links_attributes, :about, :about_html, :cover_image, :category_followers_attributes, :category_follower_ids
 
   mount_uploader :uploaded_image, UserUploader
   mount_uploader :cover_image, CoverUploader
 
+  validates_length_of :bio, maximum: 140
 
   validates_presence_of :email
   validates_uniqueness_of :email, allow_blank: true, if: :email_changed?, message: I18n.t('activerecord.errors.models.user.attributes.email.taken')
@@ -46,9 +46,6 @@ class User < ActiveRecord::Base
   has_many :projects, -> do
     without_state(:deleted)
   end
-  has_many :published_projects, -> do
-    with_states(Project::PUBLISHED_STATES)
-  end, class_name: 'Project'
   has_many :unsubscribes
   has_many :project_posts
   has_many :contributed_projects, -> do
@@ -75,7 +72,10 @@ class User < ActiveRecord::Base
   }
 
   scope :subscribed_to_posts, -> {
-     where("subscribed_to_project_posts")
+     where("id NOT IN (
+       SELECT user_id
+       FROM unsubscribes
+       WHERE project_id IS NULL)")
    }
 
   scope :subscribed_to_project, ->(project_id) {
@@ -211,9 +211,13 @@ class User < ActiveRecord::Base
     "#{self.id}-#{self.display_name.parameterize}"
   end
 
+  def posts_subscription
+    unsubscribes.posts_unsubscribe(nil)
+  end
+
   def project_unsubscribes
-    contributed_projects.map do |project|
-      unsubscribes.posts_unsubscribe(project.id)
+    contributions.with_state('confirmed', 'requested_refund', 'refunded').map do |contribution|
+      unsubscribes.posts_unsubscribe(contribution.project_id)
     end
   end
 

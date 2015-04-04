@@ -21,7 +21,6 @@ class RedactorRailsPictureUploader < ImageUploader
   # end
 
   process :read_dimensions
-  process :resize_to_limit => [667, -1]
 
   # Create different versions of your uploaded files:
   version :thumb do

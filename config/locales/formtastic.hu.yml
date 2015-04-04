@@ -3,7 +3,7 @@ hu:
   formtastic:
     hints:
       reward:
-        description: Describes your reward in a way that arouses the interest of people
+        description: Describe your reward in a way that arouses the interest of people
           to support the project .
         maximum_contributions: If your reward is limited , please as many people .
         minimum_value: This is minimum support value to choose this reward .

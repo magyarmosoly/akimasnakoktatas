@@ -10,7 +10,6 @@ RSpec.describe User, type: :model do
   describe "associations" do
     it{ is_expected.to have_many :contributions }
     it{ is_expected.to have_many :projects }
-    it{ is_expected.to have_many :published_projects }
     it{ is_expected.to have_many :notifications }
     it{ is_expected.to have_many :project_posts }
     it{ is_expected.to have_many :unsubscribes }
@@ -25,6 +24,9 @@ RSpec.describe User, type: :model do
     it{ is_expected.to allow_value('foo@bar.com').for(:email) }
     it{ is_expected.not_to allow_value('foo').for(:email) }
     it{ is_expected.not_to allow_value('foo@bar').for(:email) }
+    it{ is_expected.to allow_value('a'.center(139)).for(:bio) }
+    it{ is_expected.to allow_value('a'.center(140)).for(:bio) }
+    it{ is_expected.not_to allow_value('a'.center(141)).for(:bio) }
     it{ is_expected.to validate_uniqueness_of(:email) }
   end
 
@@ -369,6 +371,17 @@ RSpec.describe User, type: :model do
       create(:contribution, state: 'confirmed', user: user, project: other_contribution.project)
     end
     it{ is_expected.to eq([unfinished_project])}
+  end
+
+  describe "#posts_subscription" do
+    subject{user.posts_subscription}
+    context "when user is subscribed to all projects" do
+      it{ is_expected.to be_new_record }
+    end
+    context "when user is unsubscribed from all projects" do
+      before { @u = create(:unsubscribe, project_id: nil, user_id: user.id )}
+      it{ is_expected.to eq(@u)}
+    end
   end
 
   describe "#project_unsubscribes" do

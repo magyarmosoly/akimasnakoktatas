@@ -66,11 +66,13 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource_or_scope)
-    (session.delete(:return_to) || root_path)
+    return_to = session[:return_to]
+    session[:return_to] = nil
+    (return_to || root_path)
   end
 
   def redirect_user_back_after_login
-    if request.env['REQUEST_URI'].present? && !request.xhr? && session[:return_to].nil?
+    if request.env['REQUEST_URI'].present? && !request.xhr?
       session[:return_to] = request.env['REQUEST_URI']
     end
   end

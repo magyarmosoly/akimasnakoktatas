@@ -1,5 +1,7 @@
 - content_for :meta_tags do
+  meta name="description" content=resource.about
   meta property="og:title" content=resource.name
+  meta property="og:description" content=resource.about
   meta property="og:url" content=user_url(resource, locale: I18n.locale)
   meta property="og:type" content='cause'
   meta[property="og:image" content=resource.uploaded_image.thumb_facebook.url]
@@ -19,22 +21,12 @@
       .w-col.w-col-8.w-col-push-2
         .u-marginbottom-20
           = resource.decorate.display_image_html
-        .fontsize-larger.fontweight-semibold.u-marginbottom-20
+        .fontsize-largest.fontweight-semibold.u-marginbottom-20
           = resource.decorate.display_name
         .w-hidden-small.w-hidden-tiny.u-marginbottom-40.fontsize-base
-          = t('users.profile.user_since', date: localize(resource.created_at, format: "%B de %Y"))
+          | Chegou junto em #{localize(resource.created_at, format: "%B de %Y")}
           br
-        - if projects_to_show.count == 0
-          = t('users.profile.no_project_contribution')
-        - elsif projects_to_show.count == 1
-          = t('users.profile.single_project_contribution')
-        - else
-          = t('users.profile.multiple_project_contribution', n_projects: projects_to_show.count)
-        - if resource.created_projects.count == 1
-          = t('users.profile.single_project_created')
-        - elsif resource.created_projects.count > 1
-          = t('users.profile.multiple_project_created', n_projects: resource.created_projects.count)
-
+          | Apoiou #{projects_to_show.count} projetos e já criou #{resource.created_projects.count} projetos&nbsp;
   .hero-profile style="background-image: url('#{resource.cover_image.try(:base).try(:url) || resource.display_image}')"
 
 nav.project-nav.u-text-center.u-marginbottom-30.profile style='z-index: 10; position: relative;'

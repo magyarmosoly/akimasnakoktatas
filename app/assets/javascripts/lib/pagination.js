@@ -6,7 +6,8 @@ Skull.Pagination = {
     this.$loader = $loader;
     this.$loadMore = $loadMore;
     this.$results = $results;
-    this.$results.empty();
+    this.$results.html('');
+
   },
 
   getPath: function(){
@@ -29,10 +30,10 @@ Skull.Pagination = {
     this.$loader.show();
     this.$loadMore.hide();
     this.getPath().success(this.onSuccess);
+    this.filter.page += 1;
   },
 
   onSuccess: function(data){
-    this.filter.page += 1;
     this.onLastPage();
     this.$results.append(data);
     this.$loader.toggle();

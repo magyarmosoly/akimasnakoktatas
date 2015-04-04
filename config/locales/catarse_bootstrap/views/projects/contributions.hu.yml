@@ -20,10 +20,6 @@ hu:
         reward: selected reward
         edit: edit
       edit:
-        review_title: 'Ellenőrizd a fizetési adatokat'
-        review_subtitle: 'Ezt az adatot tovabbküldjük a projektvezetőnek'
-        delivery_address: 'Szállítási cím'
-        next_step: 'Következő lépés'
         payment_slip_disclaimer: If the campaign is not successful , we will refund
           your support.
         review_errors_title: Check the data reported
@@ -38,9 +34,9 @@ hu:
           user_another_card: Use another credit card
           payment_card_number: Card number
           payment_card_flag: flag
-          payment_card_source: Biztonsági kód
+          payment_card_source: Cod. Security
           payment_card_source_short: CVC
-          payment_card_date: Expiration ( mm / aaaa )
+          payment_card_date: Expiration ( mm / yy )
           payment_card_name: The name on credit card
           payment_card_installments: plots
         installment_with_tax: without interest
@@ -96,14 +92,6 @@ hu:
         Credits: credits
         error: Ooops .
       show:
-        follow: 'Követés'
-        follow_category: 'Érdekel a kategória? Emailben értesülhetsz az új projektekről.'
-        project_recommendations: 'Ajánlott projektek'
-        share: Megosztás
-        tweet: Twittelj
-        thank_you: 'Köszönjük!'
-        profile_link: 'a profilhoz'
-        thank_you_text_html: 'You are part of the group %{total} people who want to get the %{link1}! You will receive confirmation of payment by email as soon as it is processed. You can also track the status of your support %{link2}. Share your support and increase the chances of the project hit the target!'
         header_subtitle: Without you maybe this campaign did not have a chance .
         header_title: Thank you very much!
         moip_message: The verification of your transaction is in progress and MoIP

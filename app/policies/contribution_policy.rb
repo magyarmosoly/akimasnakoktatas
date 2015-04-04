@@ -12,10 +12,6 @@ class ContributionPolicy < ApplicationPolicy
     end
   end
 
-  def new?
-    record.project.online?
-  end
-
   def create?
     done_by_owner_or_admin? && record.project.online?
   end

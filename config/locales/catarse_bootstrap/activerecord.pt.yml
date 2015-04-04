@@ -232,7 +232,7 @@ pt:
               invalid: 'Token expirou. Vá para <a href="/password/new" class="alt-link">redefinir senha</a> e solicite novamente a redefinição da senha.'
             name:
               blank: "Nome do usuário não pode ficar em branco"
-            about_html:
+            about:
               blank: "Sobre você não pode ficar em branco"
             uploaded_image:
               blank: "Imagem do usuário não pode ficar em branco"
@@ -244,15 +244,6 @@ pt:
       posts: 'Novidade apagada com sucesso'
     video_regex_validation: somente URLs do Youtube ou Vimeo são aceitas
   contribution:
-    payment_details:
-      creditos: "Créditos"
-      boleto_bancario: "Boleto Bancário"
-      cartao_de_credito: "Cartão de crédito"
-      debito_bancario: "Débito bancário"
-      cartao_debito: "Cartão de débito"
-      transferencia_bancaria: "Transferência bancária" 
-      carteira_mo_ip: "Carteira MoIP" 
-      financiamento_bancario: "Financiamento Bancário"
     project_should_be_online: Você não pode apoiar um projeto que não está no ar
     reward_must_be_from_project: deve ser do mesmo projeto
     should_not_contribute_if_maximum_contributions_been_reached: já atingiu seu número
@@ -265,7 +256,8 @@ pt:
     confirmed_at: Data da confirmação do pagamento
     contribution_value: Valor do apoio
     service_fee: Taxa do Catarse
-    user_name: Nome do apoiador
+    user_full_name: Nome completo do apoiador
+    user_name: Apelido do apoiador
     user_email: Email perfil Catarse
     cpf: Cpf do apoiador
     payer_email: Email do meio de pagamento

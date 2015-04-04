@@ -37,13 +37,7 @@ RSpec.describe ContributionPolicy do
     end
   end
 
-  permissions(:new?){
-    ['draft', 'deleted', 'rejected', 'successful', 'failed', 'waiting_funds', 'in_analysis'].each do |state|
-      it "should deny access if project is #{state}" do
-        contribution.project.update_attributes state: state
-      end
-    end
-  }
+  permissions(:new?){ it_should_behave_like "create permissions" }
 
   permissions(:create?){ it_should_behave_like "create permissions" }
 
