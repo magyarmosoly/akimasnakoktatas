@@ -23,11 +23,11 @@ To run this project you need to have:
 
 * Imagemagick
 
-    brew install imagemagick
+        $ brew install imagemagick
 
 * Redis
 
-    brew install redis
+        $ brew install redis
 
 ### Setup the project
 
